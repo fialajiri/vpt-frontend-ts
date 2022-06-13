@@ -5,4 +5,13 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/hero-section";
+@import "components/home-page/hero-section";
+@import "components/home-page/coalition-section";
+@import 'components/home-page/accomplishement-section';
+@import 'components/home-page/accomplishement-pending';
+@import 'components/home-page/accomplishement-solved';
+@import 'components/home-page/program-section';
+@import 'components/home-page/past-election-section';
+@import 'components/home-page/future-election-section';
+
+

@@ -1,0 +1,30 @@
+.coalition {
+  &__container {
+    margin: 0 auto;
+    padding: 4.8rem 0 12.8rem 0;
+    background-color: $color-background2;
+  }
+
+  &__logo-container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & img {
+      filter: brightness(0);
+      opacity: 50%;
+      height: 12rem;
+      transition: all 500ms;
+
+      &:hover{
+        filter: brightness(1);
+        opacity: 100%;
+        transform: scale(1.2);
+
+      }
+    }
+  }
+}

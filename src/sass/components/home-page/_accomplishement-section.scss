@@ -1,0 +1,19 @@
+.accomplishement {
+  &__container {
+    margin: 0 auto;
+    padding: 4.8rem 0 12.8rem 0;
+  }
+
+  &__wrapper {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+  }
+
+  &__lists {
+    margin-top: 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

@@ -5,15 +5,16 @@ const HeroSection: React.FC = () => {
     <section className="hero-section__container">
       <div className="hero-section__box">
         <h1 className="headingPrimary">
-          Jsme koalicí nezávislých kandidátů, Zelených, KDU-ČSL a Pirátů
+          Jsme koalicí nezávislých kandidátů, KDU-ČSL, Zelených a Pirátů
         </h1>
       </div>
-      <div className="hero-section__image u-margin-top-big">
+      <div className="hero-section__image-box u-margin-top-big">
         <Image
+          className="hero-section_image"
           src="/images/hero-single.jpg"
           alt="členové Volby pro Teplice"
-          layout="fill"
-          objectFit="cover"
+          height={680}
+          width={1000}
         />
       </div>
     </section>

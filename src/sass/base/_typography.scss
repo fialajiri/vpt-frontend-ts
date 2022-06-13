@@ -9,17 +9,18 @@ body {
   font-size: 4rem;
   font-weight: 700;
   color: $color-grey6;
-  line-height: 1.05;
+  line-height: 1.5;
+  letter-spacing: .25px;
 }
 
-.headingSecondary {
+.heading-secondary {
   font-size: 3.6rem;
   margin-bottom: 2.4rem;
   line-height: 1.2;
   color: $color-grey6;
 }
 
-.headingTertiary {
+.heading-tertiary {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.6;

@@ -1,0 +1,34 @@
+.accomplishement--pending {
+  &__container {
+    padding: 4.8rem;
+    border-radius: $border-radius;   
+    box-shadow: $shadow-light-2; 
+    transition: all 500ms;
+
+    &:hover {
+        box-shadow: $shadow-dark;
+        transform: translateY(-1.5rem);
+      }
+
+    & ul {
+      width: 25rem;
+      margin-top: 2.4rem;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    & li {
+      display: flex;
+      gap: 1.6rem;
+      font-size: 1.8rem;
+      font-weight: 400;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    font-size: 3.6rem;
+    color: #0d3961;
+  }
+}
