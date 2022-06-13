@@ -1,0 +1,81 @@
+.zastupitel__card {
+  &__image {
+    width: 32rem;
+    height: 32rem;
+    flex-shrink: 0;
+    transform: scale(1.5);
+    border-radius: $border-radius;
+  }
+
+  &--wrapper {
+    display: flex;
+    margin: 9rem auto;
+    padding: 3.2rem 3.2rem;
+    align-items: center;
+    border-radius: 15px;
+    max-width: 120rem;
+    background-color: $color-background;
+    color: $color-grey5;
+    gap: 9.6rem;
+    transition: all 500ms;
+    box-shadow: $shadow-dark;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  &--wrapper:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: $shadow-dark-2;
+  }
+
+  &--wrapper:hover &__info--email {
+    color: $color-secondary-light3;
+  }
+
+  &--wrapper:hover &__info--email-icon {
+    color: $color-secondary-light3;
+  }
+
+  &__info {
+    &--name {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1.6rem;
+    }
+
+    &--email-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.6rem;
+      gap: 0.8rem;
+    }
+
+    &--email-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      color: $color-primary-dark1;
+      transition: all 400ms;
+    }
+
+    &--email {
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $color-primary-dark1;
+      transition: all 400ms;
+    }
+
+    &--occupation {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 1.6rem;
+    }
+
+    &--bio {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 1.6rem;
+    }
+  }
+}

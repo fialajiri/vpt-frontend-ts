@@ -1,0 +1,32 @@
+.zastupitele-list {
+  &__container {
+    margin: 0 auto;
+    max-width: 140rem;
+    text-align: center;
+  }
+  &__title {
+    margin: 16rem auto;
+    margin-bottom: 3rem;
+    font-size: 8.6rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: $color-primary-dark2;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    & li {
+    }
+
+    & li:nth-child(odd) {
+        align-self: flex-end;
+    }
+
+    & li:nth-child(even) {
+        align-self: flex-start;
+    }
+  }
+}

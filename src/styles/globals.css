@@ -85,6 +85,14 @@ button {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+@keyframes nav-button-effect {
+  0% {
+    transform-origin: 0% 0%;
+    transform: translate3d(0px, 0px, 0px) scale(0, 1); }
+  100% {
+    transform-origin: 0% 0%;
+    transform: translate3d(0px, 0px, 0px) scale(1, 1); } }
+
 .hero-section__container {
   padding: 4.8rem 6.4rem 4.8rem 6.4rem;
   background-color: #e7e1e1;
@@ -326,3 +334,167 @@ button {
     .future-election__grid__item--icon {
       font-size: 3.6rem;
       color: #145a9b; }
+
+.zastupitele-list__container {
+  margin: 0 auto;
+  max-width: 140rem;
+  text-align: center; }
+
+.zastupitele-list__title {
+  margin: 16rem auto;
+  margin-bottom: 3rem;
+  font-size: 8.6rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #0d3961; }
+
+.zastupitele-list__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
+  .zastupitele-list__list li:nth-child(odd) {
+    align-self: flex-end; }
+  .zastupitele-list__list li:nth-child(even) {
+    align-self: flex-start; }
+
+.zastupitel__card__image {
+  width: 32rem;
+  height: 32rem;
+  flex-shrink: 0;
+  transform: scale(1.5);
+  border-radius: 2rem; }
+
+.zastupitel__card--wrapper {
+  display: flex;
+  margin: 9rem auto;
+  padding: 3.2rem 3.2rem;
+  align-items: center;
+  border-radius: 15px;
+  max-width: 120rem;
+  background-color: #f1f1f1;
+  color: #333;
+  gap: 9.6rem;
+  transition: all 500ms;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+  text-align: left;
+  overflow: hidden; }
+
+.zastupitel__card--wrapper:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 5rem 10rem rgba(0, 0, 0, 0.5); }
+
+.zastupitel__card--wrapper:hover .zastupitel__card__info--email {
+  color: #966a03; }
+
+.zastupitel__card--wrapper:hover .zastupitel__card__info--email-icon {
+  color: #966a03; }
+
+.zastupitel__card__info--name {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem; }
+
+.zastupitel__card__info--email-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  gap: 0.8rem; }
+
+.zastupitel__card__info--email-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #145a9b;
+  transition: all 400ms; }
+
+.zastupitel__card__info--email {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #145a9b;
+  transition: all 400ms; }
+
+.zastupitel__card__info--occupation {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem; }
+
+.zastupitel__card__info--bio {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1.6rem; }
+
+.navigation {
+  height: 7rem;
+  position: relative; }
+
+.main__navigation {
+  position: fixed;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid #966a03;
+  z-index: 10; }
+  .main__navigation__checkbox {
+    display: none; }
+  .main__navigation__button {
+    display: none; }
+  @media only screen and (max-width: 56.25em) {
+    .main__navigation__icon {
+      position: relative; }
+      .main__navigation__icon, .main__navigation__icon::after, .main__navigation__icon::before {
+        display: inline-block;
+        height: 1.5px;
+        width: 4.5rem;
+        background-color: #000;
+        transform-origin: 0% 0%;
+        transform: translate(0px 0px); }
+      .main__navigation__icon::before, .main__navigation__icon::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 400ms; }
+      .main__navigation__icon::before {
+        top: -1.2rem; }
+      .main__navigation__icon::after {
+        top: 1.2rem; } }
+  .main__navigation__button:hover .main__navigation__icon {
+    animation-name: nav-button-effect;
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-timing-function: cubic-bezier(0.2, 1.12, 0.78, 0.93); }
+  .main__navigation__button:hover .main__navigation__icon::before {
+    animation-name: nav-button-effect;
+    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(0.2, 1.12, 0.78, 0.93); }
+  .main__navigation__button:hover .main__navigation__icon::after {
+    animation-name: nav-button-effect;
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-timing-function: cubic-bezier(0.2, 1.12, 0.78, 0.93); }
+  .main__navigation__checkbox:checked + .main__navigation__button .main__navigation__icon {
+    background-color: transparent; }
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem; }
+  .nav__list__item {
+    text-transform: uppercase;
+    display: inline-block;
+    color: #0d3961;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: all 300ms; }
+    .nav__list__item:hover, .nav__list__item:active {
+      color: #af7b04; }
+    .nav__list__item--active {
+      color: #af7b04; }
+
+.logo-image {
+  height: 10rem; }

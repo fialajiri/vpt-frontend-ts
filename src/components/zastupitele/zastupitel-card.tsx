@@ -9,7 +9,7 @@ interface ZastupitelProps {
 
 const ZastupitelCard: React.FC<ZastupitelProps> = ({ zastupitel, side }) => {
   const zastupitelImage = (
-    <div className="zastupitel-card__image">
+    <div className="zastupitel__card__image">
       <Image
         width={864}
         height={864}
@@ -20,8 +20,8 @@ const ZastupitelCard: React.FC<ZastupitelProps> = ({ zastupitel, side }) => {
   );
 
   return (
-    <div className="zastupitel__card-container">
-      <div className="zastupitel__card">
+    <div className="zastupitel__card--container">
+      <div className="zastupitel__card--wrapper">
         {side === "left" && zastupitelImage}
         <blockquote className="zastupitel__card__info">
           <p className="zastupitel__card__info--name">{zastupitel.name}</p>

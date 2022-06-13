@@ -6,16 +6,15 @@ interface ZastupiteleProps {
 }
 
 const ZastupiteleList: React.FC<ZastupiteleProps> = ({ zastupitele }) => {
-    console.log(zastupitele)
   return (
-    <section>
-      <h1 className="headingPrimary">Vaši Zastupitelé</h1>
-      <ul>
+    <section className="zastupitele-list__container">
+      <h1 className="headingPrimary zastupitele-list__title">Vaši Zastupitelé</h1>
+      <ul className="zastupitele-list__list">
         {zastupitele.map((zastupitel, index) => (
           <li key={zastupitel.id}>
             <ZastupitelCard
               zastupitel={zastupitel}
-              side={index === 0 ? "right" : "left"}
+              side={index % 2 === 0 ? "right" : "left"}
             />
           </li>
         ))}

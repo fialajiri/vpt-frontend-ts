@@ -1,9 +1,11 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
+@import 'base/animation';
 
 @import "components/home-page/hero-section";
 @import "components/home-page/coalition-section";
@@ -13,5 +15,14 @@
 @import 'components/home-page/program-section';
 @import 'components/home-page/past-election-section';
 @import 'components/home-page/future-election-section';
+
+@import 'components/zastupitele/zastupitele-list';
+@import 'components/zastupitele/zastupitel_card';
+
+@import 'layout/header/header';
+@import 'layout/navigation/main-navigation';
+@import 'layout/navigation/nav-links';
+@import 'layout/navigation/side-drawer';
+@import 'layout/navigation/logo';
 
 
