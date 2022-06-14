@@ -12,6 +12,7 @@ export interface IModalOverlayProps {
   header?: string;
   footer?: string | JSX.Element;
   onSubmit?: () => {};
+  children?: React.ReactNode;
 }
 
 const ModalOverlay: React.FC<IModalOverlayProps> = (props) => {

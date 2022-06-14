@@ -12,6 +12,7 @@ export interface ButtonProps {
   className?: string;
   type?: "button" | "submit";
   onClick?: () => void;
+  children?: React.ReactNode;
 }
 
 const Button: React.FC<ButtonProps> = (props) => {

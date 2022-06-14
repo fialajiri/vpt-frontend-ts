@@ -46,7 +46,9 @@ const MainNavigation: React.FC = () => {
           <span className="main__navigation__icon">&nbsp;</span>
         </label>
         <Link href="/">
-          <Logo />
+          <a>
+            <Logo />
+          </a>
         </Link>
         <nav className="main__navigation__links">
           <NavigationLinks />

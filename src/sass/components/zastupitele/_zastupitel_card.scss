@@ -5,6 +5,7 @@
     flex-shrink: 0;
     transform: scale(1.5);
     border-radius: $border-radius;
+    transition: all 500ms;
   }
 
   &--wrapper {
@@ -34,6 +35,10 @@
 
   &--wrapper:hover &__info--email-icon {
     color: $color-secondary-light3;
+  }
+
+  &--wrapper:hover &__image{
+    transform: scale(1.55);
   }
 
   &__info {

@@ -14,8 +14,14 @@ const NavigationLinks: React.FC = () => {
       <li className={getClass("/")}>
         <Link href="/">Domů</Link>
       </li>
+      <li className={getClass('/kandidati')}>
+        <Link href='/kandidati'>Kandidáti</Link>
+      </li>
       <li className={getClass("/zastupitele")}>
         <Link href="/zastupitele">Zastupitelé</Link>
+      </li>
+      <li className={getClass("/aktuality")}>
+        <Link href='/aktuality'>Aktuality</Link>
       </li>
     </ul>
   );

@@ -341,7 +341,7 @@ button {
   text-align: center; }
 
 .zastupitele-list__title {
-  margin: 16rem auto;
+  margin: 10rem auto;
   margin-bottom: 3rem;
   font-size: 8.6rem;
   font-weight: 500;
@@ -362,7 +362,8 @@ button {
   height: 32rem;
   flex-shrink: 0;
   transform: scale(1.5);
-  border-radius: 2rem; }
+  border-radius: 2rem;
+  transition: all 500ms; }
 
 .zastupitel__card--wrapper {
   display: flex;
@@ -388,6 +389,9 @@ button {
 
 .zastupitel__card--wrapper:hover .zastupitel__card__info--email-icon {
   color: #966a03; }
+
+.zastupitel__card--wrapper:hover .zastupitel__card__image {
+  transform: scale(1.55); }
 
 .zastupitel__card__info--name {
   font-size: 3rem;
@@ -425,17 +429,17 @@ button {
   margin-bottom: 1.6rem; }
 
 .navigation {
-  height: 7rem;
+  height: 14rem;
   position: relative; }
 
 .main__navigation {
   position: fixed;
-  padding: 0 2rem;
+  padding: 0rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 10rem;
+  height: 14rem;
   background-color: #f1f1f1;
   border-bottom: 2px solid #966a03;
   z-index: 10; }
@@ -443,41 +447,34 @@ button {
     display: none; }
   .main__navigation__button {
     display: none; }
-  @media only screen and (max-width: 56.25em) {
-    .main__navigation__icon {
-      position: relative; }
-      .main__navigation__icon, .main__navigation__icon::after, .main__navigation__icon::before {
-        display: inline-block;
-        height: 1.5px;
-        width: 4.5rem;
-        background-color: #000;
-        transform-origin: 0% 0%;
-        transform: translate(0px 0px); }
-      .main__navigation__icon::before, .main__navigation__icon::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        transition: all 400ms; }
-      .main__navigation__icon::before {
-        top: -1.2rem; }
-      .main__navigation__icon::after {
-        top: 1.2rem; } }
-  .main__navigation__button:hover .main__navigation__icon {
-    animation-name: nav-button-effect;
-    animation-duration: 500ms;
-    animation-delay: 100ms;
-    animation-timing-function: cubic-bezier(0.2, 1.12, 0.78, 0.93); }
+  .main__navigation__icon {
+    position: relative; }
+    .main__navigation__icon, .main__navigation__icon::after, .main__navigation__icon::before {
+      display: inline-block;
+      height: 3px;
+      width: 4.5rem;
+      background-color: #fff; }
+    .main__navigation__icon::before, .main__navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 400ms; }
+    .main__navigation__icon::before {
+      top: -1.2rem; }
+    .main__navigation__icon::after {
+      top: 1.2rem; }
   .main__navigation__button:hover .main__navigation__icon::before {
-    animation-name: nav-button-effect;
-    animation-duration: 500ms;
-    animation-timing-function: cubic-bezier(0.2, 1.12, 0.78, 0.93); }
+    top: -1.5rem; }
   .main__navigation__button:hover .main__navigation__icon::after {
-    animation-name: nav-button-effect;
-    animation-duration: 500ms;
-    animation-delay: 100ms;
-    animation-timing-function: cubic-bezier(0.2, 1.12, 0.78, 0.93); }
+    top: 1.5rem; }
   .main__navigation__checkbox:checked + .main__navigation__button .main__navigation__icon {
     background-color: transparent; }
+  .main__navigation__checkbox:checked + .main__navigation__button .main__navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .main__navigation__checkbox:checked + .main__navigation__button .main__navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
 
 .nav__list {
   list-style: none;
@@ -488,7 +485,7 @@ button {
     text-transform: uppercase;
     display: inline-block;
     color: #0d3961;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 500;
     transition: all 300ms; }
     .nav__list__item:hover, .nav__list__item:active {
@@ -497,4 +494,5 @@ button {
       color: #af7b04; }
 
 .logo-image {
-  height: 10rem; }
+  height: 12rem;
+  cursor: pointer; }
