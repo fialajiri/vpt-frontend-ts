@@ -1,7 +1,6 @@
 .hero-section {
   &__container {
-    padding: 3.6rem 6.4rem 3.6rem 6.4rem;
-    // background-color: $color-background2;
+    padding: 3.6rem 6.4rem 3.6rem 6.4rem;    
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -19,6 +18,10 @@
       text-transform: uppercase;
       color: $color-primary-dark2;
       transition: all 400ms;
+
+      @include respond(tab-port) {
+        font-size: 6rem;
+      }
     }
 
     &--pro {
@@ -31,6 +34,11 @@
       transform: translateY(0.5rem);
       margin: 1rem 0.25rem 0 1.25rem;
       transition: all 400ms;
+
+      @include respond(tab-port) {
+        font-size: 3.5rem;
+      }
+
     }
   }
 
@@ -42,16 +50,28 @@
     overflow: hidden;
     height: 86rem;    
     width: 130rem;
-    border: $border-line;
+
+    @include respond(tab-land) {
+      height: 66rem;
+      width: 100rem;
+    }
+
+    @include respond(tab-port) {
+      height: 50rem;
+      width: 75rem;
+    }
+
+    @include respond(phone) {
+      height: 40rem;
+      width: 60rem;
+    }
+
+    @include respond(phone-small) {
+      height: 26rem;
+      width: 40rem;
+    }
+    
   }
 
-  // &__ {
-  //   max-width: 130rem;
-  //   margin: 0 auto;
-  //   padding: 0 3.2rem;
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr;
-  //   align-items: center;
-  //   column-gap: 9.6rem;
-  // }
+  
 }

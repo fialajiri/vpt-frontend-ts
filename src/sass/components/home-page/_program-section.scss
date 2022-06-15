@@ -12,22 +12,28 @@
   &__priorities {
     list-style: none;
     margin-top: 6.4rem;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     row-gap: 4rem;
+
+    @include respond(tab-land) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 8rem;
+      margin: 6.4rem 4rem 0 4rem;
+    }
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      row-gap: 6rem;
+    }
+
 
     &__item {
       transition: all 500ms;
       padding: 1rem;
       display: flex;
       flex-direction: column;
-
-      // &:hover {        
-      //   box-shadow: $shadow-light-2;
-      //   border-radius: $border-radius;
-      // }
 
       &:hover &--icon {
         background-color: $color-primary-dark2;
@@ -53,12 +59,12 @@
         color: $color-grey5;
         font-weight: 700;
         margin-bottom: 1.6rem;
-        
       }
 
       &--text {
         font-size: 1.8rem;
         line-height: 1.8;
+        // text-align: justify;
       }
     }
   }

@@ -11,7 +11,7 @@ const AccomplishementPending: React.FC = () => {
         </li>
         <li>
           <Barbell className="accomplishement--pending__icon" />
-          <span>Výstavba plovárny</span>
+          <span>Výstavbu plovárny</span>
         </li>
         <li>
           <Barbell className="accomplishement--pending__icon" />
@@ -27,11 +27,11 @@ const AccomplishementPending: React.FC = () => {
         </li>
         <li>
           <Barbell className="accomplishement--pending__icon" />
-          <span>Kultura ve městě</span>
+          <span>Kulturu ve městě</span>
         </li>
         <li>
           <Barbell className="accomplishement--pending__icon" />
-          <span>Péče o městskou zeleňy</span>
+          <span>Péči o městskou zeleň</span>
         </li>
       </ul>
     </div>
