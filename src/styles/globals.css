@@ -110,31 +110,20 @@ button {
   align-items: center;
   gap: 3rem; }
 
-.hero-section__heading--volba, .hero-section__heading--teplice {
+.hero-section__heading--volba, .hero-section__heading--teplice, .hero-section__heading--pro {
   display: inline-block;
   font-size: 8rem;
-  letter-spacing: 2px;
-  font-weight: 600;
+  letter-spacing: -2px;
+  font-weight: 500;
   text-transform: uppercase;
   color: #0d3961;
   transition: all 400ms; }
   @media only screen and (max-width: 56.25em) {
-    .hero-section__heading--volba, .hero-section__heading--teplice {
+    .hero-section__heading--volba, .hero-section__heading--teplice, .hero-section__heading--pro {
       font-size: 6rem; } }
 
 .hero-section__heading--pro {
-  font-size: 5rem;
-  font-weight: 500;
-  color: #966a03;
-  letter-spacing: 0px;
-  text-transform: uppercase;
-  display: inline-block;
-  transform: translateY(0.5rem);
-  margin: 1rem 0.25rem 0 1.25rem;
-  transition: all 400ms; }
-  @media only screen and (max-width: 56.25em) {
-    .hero-section__heading--pro {
-      font-size: 3.5rem; } }
+  color: #966a03; }
 
 .hero-section__image-box {
   position: relative;
@@ -142,11 +131,11 @@ button {
   border-radius: 2rem;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.03);
   overflow: hidden;
-  height: 86rem;
+  height: 43rem;
   width: 130rem; }
   @media only screen and (max-width: 75em) {
     .hero-section__image-box {
-      height: 66rem;
+      height: 33rem;
       width: 100rem; } }
   @media only screen and (max-width: 56.25em) {
     .hero-section__image-box {
@@ -705,7 +694,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  color: #3a4e4c; }
+  color: #0e0f11; }
   .footer__created-by__text {
     font-size: 1rem;
     text-transform: uppercase;
@@ -723,7 +712,7 @@ button {
     letter-spacing: 1px; }
   .footer__created-by__email {
     text-decoration: none;
-    border-bottom: 1px solid #3a4e4c;
+    border-bottom: 1px solid #0e0f11;
     line-height: 1.2; }
 
 @media only screen and (max-width: 56.25em) {
@@ -735,7 +724,7 @@ button {
   flex-direction: column;
   align-items: flex-end;
   gap: 0.5rem;
-  color: #3a4e4c; }
+  color: #0e0f11; }
   .footer__photos-by__text {
     font-size: 1rem;
     text-transform: uppercase;

@@ -1,0 +1,193 @@
+[
+  {
+    "id": "id1",
+    "name": "Ing. Jakub Mráček",
+    "image": "/images/kandidati/1_mracek.jpg",
+    "occupation": "středoškolský učitel, skautský vedoucí",
+    "order": 1
+  },
+  {
+    "id": "id2",
+    "name": "Adam Souček",
+    "image": "/images/kandidati/2_soucek.jpg",
+    "occupation": "úředník odboru zdravotnictví, místopředseda Spolku lokálních drah",
+    "order": 2
+  },
+  {
+    "id": "id3",
+    "name": "Mgr. Nikola Fialová Seifrtová",
+    "image": "/images/kandidati/3_nikolka.jpg",
+    "occupation": "pořadatelka kulturních a sportovních akcí",
+    "order": 3
+  },
+  {
+    "id": "id4",
+    "name": "RNDr. Zdeněk Bergman",
+    "image": "/images/kandidati/4_bergman.jpg",
+    "occupation": "ředitel Gymnázia Teplice",
+    "order": 4
+  },
+  {
+    "id": "id5",
+    "name": "Ing. Jiří Wagner",
+    "image": "/images/kandidati/5_wagner.jpg",
+    "occupation": "ekonom",
+    "order": 5
+  },
+  {
+    "id": "id6",
+    "name": "Bc. Petr Slavíček",
+    "image": "/images/kandidati/6_slavicek.jpg",
+    "occupation": "vedoucí programátor",
+    "order": 6
+  },
+  {
+    "id":"id7",
+    "name": "Mgr. Martin Sobek",
+    "image": "/images/kandidati/7_sobek.jpg",
+    "occupation": "advokát",
+    "order": 7
+  },
+  {
+    "id": "id8",
+    "name": "Mgr. Marcela Bartáková",
+    "image": "/images/kandidati/8_bartakova.jpg",
+    "occupation": "vedoucí pobočky Probační a mediační služby",
+    "order": 8
+  },
+  {
+    "id": "id9",
+    "name": "Mgr. Matěj Hon",
+    "image": "/images/kandidati/9_matej-hon.jpg",
+    "occupation": "právník, odborník na sociální politiku",
+    "order": 9
+  },
+  {
+    "id": "id10",
+    "name": "Robert Appel",
+    "image": "/images/kandidati/10_appel.jpg",
+    "occupation": "podnikatel, předseda spolku Ulpan Teplice",
+    "order": 10
+  },
+  {
+    "id": "id11",
+    "name": "Mgr. Eva Klášterková",
+    "image": "/images/kandidati/11_klasterkova.jpg",
+    "occupation": "pracovnice teplického muzea",
+    "order": 11
+  },
+  {
+    "id": "id12",
+    "name": "MUDr. Jan Kubalík",
+    "image": "/images/kandidati/12_kubalik.jpg",
+    "occupation": "chirurg",
+    "order": 12
+  },
+  {
+    "id": "id13",
+    "name": "Ing. Adam Tomáš",
+    "image": "/images/kandidati/13_tomas.jpg",
+    "occupation": "sociální pracovník, trenér bojového umění",
+    "order": 13
+  },
+  {
+    "id": "id14",
+    "name": "Martin Ryba",
+    "image": "/images/kandidati/14_ryba.jpg",
+    "occupation": "učitel, divadelník",
+    "order": 14
+  },
+  {
+    "id": "id15",
+    "name": "Ing. arch. Jan Hanzlík",
+    "image": "/images/kandidati/15_hanzlik.jpg",
+    "occupation": "architekt",
+    "order": 15
+  },
+  {
+    "id": "id16",
+    "name": "Ing. Hana Rezková",
+    "image": "/images/kandidati/16_rezkova.jpg",
+    "occupation": "obchodní zástupkyně, bývalá trenérka mládežnického hokeje",
+    "order": 16
+  },
+  {
+    "id": "id17",
+    "name": "Mgr. Oto Kovanda",
+    "image": "/images/kandidati/17_kovanda.jpg",
+    "occupation": "vedoucí teplické pobočky White Light I.",
+    "order": 17
+  },
+  {
+    "id": "id18",
+    "name": "Ing. Ivo Barabáš",
+    "image": "/images/kandidati/18_barabas.jpg",
+    "occupation": "vodohospodář",
+    "order": 18
+  },
+  {
+    "id": "id19",
+    "name": "Mgr. Alexandra Bernardová",
+    "image": "/images/kandidati/19_bernardova.jpg",
+    "occupation": "vědecká pracovnice",
+    "order": 19
+  },
+  {
+    "id": "id20",
+    "name": "Mgr. Adam Štika",
+    "image": "/images/kandidati/20_stika.jpg",
+    "occupation": "sociální pracovník",
+    "order": 20
+  },
+  {
+    "id": "id21",
+    "name": "Daniel Sajdl",
+    "image": "/images/kandidati/21_sajdl.jpg",
+    "occupation": "materiálový specialista",
+    "order": 21
+  },
+  
+  {
+    "id": "id22",
+    "name": "Mgr. Marie Doskočilová",
+    "image": "/images/kandidati/22_doskocilova.jpg",
+    "occupation": "hudebnice, pastorační asistentka",
+    "order": 22
+  },
+  {
+    "id": "id23",
+    "name": "Mgr. Josef Hon",
+    "image": "/images/kandidati/23_josef-hon.jpg",
+    "occupation": "zakladatel Arkadie",
+    "order": 23
+  },
+  {
+    "id": "id24",
+    "name": "Mgr. Ludmila Mráčková",
+    "image": "/images/kandidati/24_mrackova.jpg",
+    "occupation": "zakladatelka rodinného centra Jeřabina",
+    "order": 24
+  },
+  {
+    "id": "id25",
+    "name": "Bc. Richard Sedláček",
+    "image": "/images/kandidati/25_sedlacek.jpg",
+    "occupation": "student veřejné správy",
+    "order": 25
+  },
+  {
+    "id": "id26",
+    "name": "Milan Pekárek",
+    "image": "/images/kandidati/26_pekarek.jpg",
+    "occupation": "technik",
+    "order": 26
+  },
+  {
+    "id": "id27",
+    "name": "Leonardo Besa",
+    "image": "/images/kandidati/27_besa.jpg",
+    "occupation": "student historie",
+    "order": 27
+  }
+  
+]

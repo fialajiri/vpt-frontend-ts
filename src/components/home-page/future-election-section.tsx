@@ -9,7 +9,7 @@ const FutureElection: React.FC = () => {
 
         <div className="future-election__grid">
           <div className="future-election__grid__item">
-            <h3 className="heading-tertiary">Volby 2022</h3>
+            <h3 className="heading-tertiary">Volby 2022 - naše ambice</h3>
             <ul>
               <li>
                 <Article className="future-election__grid__item--icon" />

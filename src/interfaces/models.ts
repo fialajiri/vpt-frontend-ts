@@ -11,3 +11,11 @@ export interface ZastupitelDoc {
   email: string;
   occupation: string;
 }
+
+export interface KandidatDoc {
+  id: string;
+  name: string;
+  image: string;
+  occupation: string;
+  order: number;
+}
