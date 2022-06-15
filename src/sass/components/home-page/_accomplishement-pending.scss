@@ -4,6 +4,8 @@
     border-radius: $border-radius;   
     box-shadow: $shadow-light-2; 
     transition: all 500ms;
+    border: 2px solid $color-primary-dark2;
+    min-height: 53rem;
 
     &:hover {
         box-shadow: $shadow-dark;
@@ -11,7 +13,7 @@
       }
 
     & ul {
-      width: 25rem;
+      width: 40rem;
       margin-top: 2.4rem;
       list-style: none;
       display: flex;

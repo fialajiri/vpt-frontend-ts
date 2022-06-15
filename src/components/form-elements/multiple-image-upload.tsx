@@ -5,7 +5,7 @@ import Button from "../ui-elements/button";
 export interface MultipleImageUploadProps {
   isValid: boolean; 
   maxFiles: number;
-  errorText: string;
+  errorText?: string;
   className?: string;
   inputId: string;
   buttonLabel: string;

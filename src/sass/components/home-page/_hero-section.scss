@@ -1,34 +1,57 @@
 .hero-section {
   &__container {
-    padding: 4.8rem 6.4rem 4.8rem 6.4rem;
-    background-color: $color-background2;
+    padding: 3.6rem 6.4rem 3.6rem 6.4rem;
+    // background-color: $color-background2;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
   }
 
-  &__image {
-    position: relative;
-    object-fit: cover;
-    height: 100%;
+  &__heading {
+    &--volba,
+    &--teplice {
+      display: inline-block;
+      font-size: 8rem;
+      letter-spacing: 2px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $color-primary-dark2;
+      transition: all 400ms;
+    }
+
+    &--pro {
+      font-size: 5rem;
+      font-weight: 500;
+      color: $color-secondary-dark3;
+      letter-spacing: 0px;
+      text-transform: uppercase;
+      display: inline-block;
+      transform: translateY(0.5rem);
+      margin: 1rem 0.25rem 0 1.25rem;
+      transition: all 400ms;
+    }
   }
-  
+
   &__image-box {
+    position: relative;
     display: flex;
     border-radius: $border-radius;
     box-shadow: $shadow-light;
     overflow: hidden;
+    height: 86rem;    
+    width: 130rem;
+    border: $border-line;
   }
 
-  &__ {
-    max-width: 130rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    column-gap: 9.6rem;
-  }
+  // &__ {
+  //   max-width: 130rem;
+  //   margin: 0 auto;
+  //   padding: 0 3.2rem;
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  //   align-items: center;
+  //   column-gap: 9.6rem;
+  // }
 }

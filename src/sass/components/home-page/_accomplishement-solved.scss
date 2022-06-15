@@ -1,10 +1,11 @@
 .accomplishement--solved {
   &__container {
     padding: 4.8rem;
-    border-radius: $border-radius;
-    background-color: #e7e1e1;
+    border-radius: $border-radius;    
     box-shadow: $shadow-light-2;
     transition: all 500ms;
+    border: $border-line;
+    min-height: 53rem;
 
     &:hover {
       box-shadow: $shadow-dark;
@@ -12,7 +13,7 @@
     }
 
     & ul {
-      width: 25rem;
+      width: 40rem;
       margin-top: 2.4rem;
       list-style: none;
       display: flex;

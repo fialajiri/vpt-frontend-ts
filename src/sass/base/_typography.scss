@@ -11,20 +11,21 @@ body {
   color: $color-grey6;
   line-height: 1.5;
   letter-spacing: .25px;
+  color: $color-primary-dark2
 }
 
 .heading-secondary {
   font-size: 3.6rem;
   margin-bottom: 2.4rem;
-  line-height: 1.2;
-  color: $color-grey6;
+  line-height: 1.4;
+  color:$color-primary-dark2;  
 }
 
 .heading-tertiary {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.6;
-  color: $color-secondary-light3;
+  color: $color-secondary-dark3;
   text-transform: uppercase;
   text-align: left;
 }

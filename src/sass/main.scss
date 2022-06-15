@@ -7,6 +7,7 @@
 @import "base/utilities";
 @import 'base/animation';
 
+@import "components/home-page/home-page";
 @import "components/home-page/hero-section";
 @import "components/home-page/coalition-section";
 @import 'components/home-page/accomplishement-section';
@@ -17,14 +18,21 @@
 @import 'components/home-page/future-election-section';
 
 @import 'components/zastupitele/zastupitele-list';
-@import 'components/zastupitele/zastupitel_card';
+@import 'components/zastupitele/zastupitel-card';
+@import 'components/zastupitele/zastupitel-new';
+
+@import 'components/ui-elements/button';
 
 @import 'components/form-elemetns/input';
+@import 'components/form-elemetns/multiple-image-upload';
 
 @import 'layout/header/header';
 @import 'layout/navigation/main-navigation';
 @import 'layout/navigation/nav-links';
 @import 'layout/navigation/side-drawer';
 @import 'layout/navigation/logo';
+
+@import 'layout/footer/footer-navigation';
+@import 'layout/footer/footer';
 
 

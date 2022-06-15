@@ -4,8 +4,7 @@ const FutureElection: React.FC = () => {
     <section className="future-election__container">
       <div className="future-election__wrapper">
         <h2 className="heading-secondary">
-          Volby v roce 2022 plánujeme vyhrát a stát se nejsilnější stranou v
-          Teplicích
+        Volby v roce 2022 vyhrajeme a prosadíme maximum z našeho programu
         </h2>
 
         <div className="future-election__grid">
@@ -15,19 +14,19 @@ const FutureElection: React.FC = () => {
               <li>
                 <Article className="future-election__grid__item--icon" />
                 <span>
-                  <strong>35+% </strong>hlasů
+                  <strong>30+% </strong>hlasů
                 </span>
               </li>
               <li>
                 <UsersFour className="future-election__grid__item--icon" />
                 <span>
-                  <strong> 110 000+</strong> hlasů
+                  <strong> 100 000+</strong> hlasů
                 </span>
               </li>
               <li>
                 <Person className="future-election__grid__item--icon" />
                 <span>
-                  <strong>11</strong> zastupitelů
+                  <strong>10+</strong> zastupitelů
                 </span>
               </li>
             </ul>

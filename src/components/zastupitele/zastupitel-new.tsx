@@ -44,7 +44,7 @@ const NewZastupitel: React.FC = () => {
           <Input
             id="name"
             element="input"
-            label="jméno"
+            label="Jméno"
             type="text"
             validators={[VALIDATOR_MINLENGTH(5), VALIDATOR_MAXLENGTH(30)]}
             errorText="Jméno musí mít minimálně 5 a maximálně 30 znaků."
@@ -80,14 +80,13 @@ const NewZastupitel: React.FC = () => {
           />
           <MultipleImageUpload
             inputId="image"
-            maxFiles={1}
-            errorText={"Vyberte fotografii"}
+            maxFiles={1}            
             setImages={setSelectedFiles}
             isValid={imageIsValid}
             setIsValid={setImageIsValid}
             buttonLabel={"Vyberte fotografii"}
           />
-          <Button>Uložit</Button>
+          <Button className="zastupitel-new__form--button">Uložit</Button>
         </form>
       </div>
     </Fragment>

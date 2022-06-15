@@ -11,15 +11,15 @@ const AccomplishementSolved: React.FC = () => {
         </li>
         <li>
           <CheckCircle className='accomplishement--solved__icon' />
-          <span>Lorem ipsum</span>
+          <span>Komunitní plánování</span>
         </li>
         <li>
           <CheckCircle className='accomplishement--solved__icon' />
-          <span>Lorem ipsum</span>
+          <span>Započetí prací na novém územním plánu</span>
         </li>
         <li>
           <CheckCircle className='accomplishement--solved__icon' />
-          <span>Lorem ipsum</span>
+          <span>On-line přenosy z jednání zastupitelstva</span>
         </li>
       </ul>
     </div>

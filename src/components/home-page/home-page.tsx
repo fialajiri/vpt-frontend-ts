@@ -7,7 +7,7 @@ import FutureElection from "./future-election-section";
 
 const HomePage: React.FC = () => {
   return (
-    <div>
+    <div className="home-page__container">
       <HeroSection />
       <Coalition />
       <Accomplishement />

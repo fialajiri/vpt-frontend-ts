@@ -2,7 +2,6 @@
   &__container {
     margin: 0 auto;
     padding: 4.8rem 0 12.8rem 0;
-    background-color: $color-background2;
   }
 
   &__logo-container {
@@ -19,11 +18,10 @@
       height: 12rem;
       transition: all 500ms;
 
-      &:hover{
+      &:hover {
         filter: brightness(1);
         opacity: 100%;
         transform: scale(1.2);
-
       }
     }
   }

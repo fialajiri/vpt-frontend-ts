@@ -5,7 +5,7 @@ const PastElection: React.FC = () => {
     <section className="past-election__container">
       <div className="past-election__wrapper">
         <h2 className="heading-secondary">
-          Již 7 let jsme druhým největším subjektem ve městě
+        Již 7 let jsme druhým největším subjektem v městském zastupitelstvu
         </h2>
 
         <div className="past-election__grid">
