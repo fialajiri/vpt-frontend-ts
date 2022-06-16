@@ -12,14 +12,15 @@ interface KandidatiProps {
 const KandidatiPage: NextPage<KandidatiProps> = ({ kandidati }) => {
   const loadedCandidatesNames: string = "";
 
-  console.log(kandidati);
-
   return (
     <Fragment>
       <Head>
         <title>Zastupitelé</title>
         <meta name="keywords" content={loadedCandidatesNames} />
-        <meta name="description" content="Seznam zastupitelů Volby pro Teplice" />
+        <meta
+          name="description"
+          content="Seznam zastupitelů Volby pro Teplice"
+        />
       </Head>
       <KandidatiList kandidati={kandidati} />
     </Fragment>
@@ -31,7 +32,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-        kandidati
+      kandidati,
     },
     revalidate: 60 * 60 * 24,
   };

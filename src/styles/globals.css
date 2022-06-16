@@ -481,6 +481,97 @@ button {
   margin: 0 auto;
   margin-top: 5rem; }
 
+.kandidat-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative; }
+  .kandidat-card__side {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 0.8s ease;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    .kandidat-card__side--front {
+      position: relative; }
+    .kandidat-card__side--back {
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      border-radius: 2rem; }
+  .kandidat-card:hover .kandidat-card__side--front {
+    transform: rotateY(-180deg); }
+  .kandidat-card:hover .kandidat-card__side--back {
+    transform: rotateY(0); }
+  .kandidat-card__order-container {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    transform: translateX(-50%);
+    color: #fab005;
+    background-color: #0d3961;
+    padding: 1rem 2rem;
+    border-radius: 100%;
+    font-size: 4rem;
+    font-weight: 500;
+    width: 9rem;
+    text-align: center;
+    opacity: 0.75; }
+  .kandidat-card__image {
+    display: flex;
+    position: relative;
+    width: 52rem;
+    height: 35rem;
+    border-radius: 2rem;
+    overflow: hidden; }
+    .kandidat-card__image--small {
+      display: flex;
+      position: relative;
+      width: 26rem;
+      height: 35rem;
+      border-radius: 2rem;
+      overflow: hidden;
+      flex-shrink: 0; }
+  .kandidat-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: #0d3961;
+    padding: 1rem; }
+    .kandidat-card__info-name {
+      font-size: 2.2rem;
+      font-weight: 600; }
+    .kandidat-card__info-occupation {
+      font-size: 1.6rem;
+      font-weight: 500; }
+
+.kandidati-list {
+  margin: 0 auto;
+  max-width: 140rem;
+  text-align: center; }
+  .kandidati-list__title {
+    margin: 10rem auto;
+    font-size: 8.6rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #0d3961; }
+  .kandidati-list ul {
+    margin: 0 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+    row-gap: 8rem; }
+    @media only screen and (max-width: 75em) {
+      .kandidati-list ul {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6rem;
+        row-gap: 6rem; } }
+  .kandidati-list li {
+    list-style: none; }
+
 .button {
   line-height: 1.2 !important;
   text-decoration: 0;
