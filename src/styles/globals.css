@@ -45,12 +45,18 @@ body {
   line-height: 1.5;
   letter-spacing: .25px;
   color: #0d3961; }
+  @media only screen and (max-width: 37.5em) {
+    .headingPrimary {
+      font-size: 3rem; } }
 
 .heading-secondary {
   font-size: 3.6rem;
   margin-bottom: 2.4rem;
   line-height: 1.4;
   color: #0d3961; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 3rem; } }
 
 .heading-tertiary {
   font-size: 2rem;
@@ -99,11 +105,11 @@ button {
     transform: translate3d(0px, 0px, 0px) scale(1, 1); } }
 
 .home-page__container {
-  max-width: 120rem;
+  max-width: 140rem;
   margin: 0 auto; }
 
 .hero-section__container {
-  padding: 3.6rem 6.4rem 3.6rem 6.4rem;
+  padding: 3.6rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -121,6 +127,9 @@ button {
   @media only screen and (max-width: 56.25em) {
     .hero-section__heading--volba, .hero-section__heading--teplice, .hero-section__heading--pro {
       font-size: 6rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .hero-section__heading--volba, .hero-section__heading--teplice, .hero-section__heading--pro {
+      font-size: 5rem; } }
 
 .hero-section__heading--pro {
   color: #966a03; }
@@ -131,28 +140,30 @@ button {
   border-radius: 2rem;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.03);
   overflow: hidden;
-  height: 43rem;
-  width: 130rem; }
+  height: 38rem;
+  width: 100%; }
   @media only screen and (max-width: 75em) {
     .hero-section__image-box {
-      height: 33rem;
-      width: 100rem; } }
+      height: 31.5rem; } }
   @media only screen and (max-width: 56.25em) {
     .hero-section__image-box {
-      height: 50rem;
-      width: 75rem; } }
+      height: 20rem; } }
   @media only screen and (max-width: 37.5em) {
     .hero-section__image-box {
-      height: 40rem;
-      width: 60rem; } }
+      height: 15rem; } }
   @media only screen and (max-width: 22.5em) {
     .hero-section__image-box {
-      height: 26rem;
-      width: 40rem; } }
+      height: 10rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .hero-section__image-box {
+      height: 43rem; } }
 
 .coalition__container {
   margin: 0 auto;
   padding: 4.8rem 0 12.8rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .coalition__container {
+      padding: 3rem 0; } }
 
 .coalition__logo-container {
   max-width: 130rem;
@@ -161,6 +172,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-around; }
+  @media only screen and (max-width: 37.5em) {
+    .coalition__logo-container {
+      flex-direction: column;
+      gap: 3rem; } }
   .coalition__logo-container img {
     filter: brightness(0);
     opacity: 50%;
@@ -196,6 +211,9 @@ button {
   transition: all 500ms;
   border: 2px solid #0d3961;
   min-height: 53rem; }
+  @media only screen and (max-width: 37.5em) {
+    .accomplishement--pending__container {
+      padding: 2rem; } }
   .accomplishement--pending__container:hover {
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
     transform: translateY(-1.5rem); }
@@ -206,16 +224,31 @@ button {
     display: flex;
     flex-direction: column;
     gap: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .accomplishement--pending__container ul {
+        width: 35rem; } }
+    @media only screen and (max-width: 22.5em) {
+      .accomplishement--pending__container ul {
+        width: 30rem; } }
   .accomplishement--pending__container li {
     display: flex;
     gap: 1.6rem;
     font-size: 1.8rem;
     font-weight: 400;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .accomplishement--pending__container li {
+        font-size: 1.4rem; } }
+
+.accomplishement--pending__heading {
+  text-align: center; }
 
 .accomplishement--pending__icon {
   font-size: 3.6rem;
   color: #0d3961; }
+  @media only screen and (max-width: 37.5em) {
+    .accomplishement--pending__icon {
+      font-size: 2.8remrem; } }
 
 .accomplishement--solved__container {
   padding: 4.8rem;
@@ -224,6 +257,9 @@ button {
   transition: all 500ms;
   border: 2px solid #966a03;
   min-height: 53rem; }
+  @media only screen and (max-width: 37.5em) {
+    .accomplishement--solved__container {
+      padding: 2rem; } }
   .accomplishement--solved__container:hover {
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
     transform: translateY(-1.5rem); }
@@ -234,16 +270,31 @@ button {
     display: flex;
     flex-direction: column;
     gap: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .accomplishement--solved__container ul {
+        width: 35rem; } }
+    @media only screen and (max-width: 22.5em) {
+      .accomplishement--solved__container ul {
+        width: 30rem; } }
   .accomplishement--solved__container li {
     display: flex;
     gap: 1.6rem;
     font-size: 1.8rem;
     font-weight: 400;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .accomplishement--solved__container li {
+        font-size: 1.4rem; } }
+
+.accomplishement--solved__heading {
+  text-align: center; }
 
 .accomplishement--solved__icon {
   font-size: 3.6rem;
   color: #966a03; }
+  @media only screen and (max-width: 37.5em) {
+    .accomplishement--solved__icon {
+      font-size: 2.8remrem; } }
 
 .program__container {
   margin-bottom: 12.8rem; }
@@ -545,6 +596,25 @@ button {
         font-size: 2.8rem;
         font-weight: 500;
         width: 7rem; } }
+    .kandidat-card__order-container--back {
+      display: none; }
+      @media only screen and (max-width: 56.25em) {
+        .kandidat-card__order-container--back {
+          display: block;
+          position: absolute;
+          top: 20%;
+          left: 19%;
+          z-index: 10; } }
+      @media only screen and (max-width: 37.5em) {
+        .kandidat-card__order-container--back {
+          font-size: 3rem;
+          width: 7rem;
+          left: 10%; } }
+      @media only screen and (max-width: 22.5em) {
+        .kandidat-card__order-container--back {
+          font-size: 3rem;
+          width: 7rem;
+          left: 14%; } }
   .kandidat-card__image {
     display: flex;
     position: relative;
@@ -567,6 +637,9 @@ button {
         .kandidat-card__image--small {
           width: 80%;
           height: 50rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .kandidat-card__image--small {
+          width: 100%; } }
       @media only screen and (min-width: 112.5em) {
         .kandidat-card__image--small {
           height: 30rem; } }
@@ -579,8 +652,8 @@ button {
     text-align: left; }
     @media only screen and (max-width: 56.25em) {
       .kandidat-card__info {
-        flex-direction: row;
-        align-items: center; } }
+        align-items: center;
+        gap: 1rem; } }
     .kandidat-card__info-name {
       font-size: 2.2rem;
       font-weight: 600; }
@@ -601,12 +674,16 @@ button {
       font-weight: 500; }
       @media only screen and (max-width: 75em) {
         .kandidat-card__info-occupation {
-          font-size: 1.6rem;
-          font-weight: 500; } }
+          font-size: 1.6rem; } }
       @media only screen and (max-width: 56.25em) {
         .kandidat-card__info-occupation {
-          font-size: 1.8rem;
-          font-weight: 500; } }
+          font-size: 1.8rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .kandidat-card__info-occupation {
+          font-size: 1.6rem; } }
+      @media only screen and (max-width: 22.5em) {
+        .kandidat-card__info-occupation {
+          font-size: 1.4rem; } }
       @media only screen and (min-width: 112.5em) {
         .kandidat-card__info-occupation {
           font-size: 1.4rem;
@@ -622,6 +699,15 @@ button {
     font-weight: 500;
     letter-spacing: -1px;
     color: #0d3961; }
+    @media only screen and (max-width: 37.5em) {
+      .kandidati-list__title {
+        font-size: 6rem;
+        font-weight: 500; } }
+    @media only screen and (max-width: 37.5em) {
+      .kandidati-list__title {
+        margin: 6rem auto;
+        font-size: 5rem;
+        font-weight: 500; } }
   .kandidati-list ul {
     margin: 0 4rem 10rem 4rem;
     display: grid;
@@ -639,7 +725,14 @@ button {
       .kandidati-list ul {
         grid-template-columns: 1fr;
         column-gap: 6rem;
+        row-gap: 16rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .kandidati-list ul {
         row-gap: 12rem; } }
+    @media only screen and (max-width: 22.5em) {
+      .kandidati-list ul {
+        margin: 0 2rem 10rem 2rem;
+        row-gap: 10rem; } }
     @media only screen and (min-width: 112.5em) {
       .kandidati-list ul {
         grid-template-columns: repeat(3, 1fr); } }

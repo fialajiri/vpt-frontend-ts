@@ -3,7 +3,7 @@ import { Barbell } from "phosphor-react";
 const AccomplishementPending: React.FC = () => {
   return (
     <div className="accomplishement--pending__container">
-      <h3 className="heading-tertiary">Řešíme</h3>
+      <h3 className="heading-tertiary accomplishement--pending__heading">Řešíme</h3>
       <ul>
         <li>
           <Barbell className="accomplishement--pending__icon" />

@@ -1,11 +1,15 @@
 .accomplishement--solved {
   &__container {
     padding: 4.8rem;
-    border-radius: $border-radius;    
+    border-radius: $border-radius;
     box-shadow: $shadow-light-2;
     transition: all 500ms;
     border: $border-line;
     min-height: 53rem;
+
+    @include respond(phone) {
+      padding: 2rem;
+    }
 
     &:hover {
       box-shadow: $shadow-dark;
@@ -19,6 +23,13 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+
+      @include respond(phone) {
+        width: 35rem;
+      }
+      @include respond(phone-small) {
+        width: 30rem;
+      }
     }
     & li {
       display: flex;
@@ -26,12 +37,22 @@
       font-size: 1.8rem;
       font-weight: 400;
       align-items: center;
+
+      @include respond(phone) {
+        font-size: 1.4rem;
+      }
     }
+  }
+
+  &__heading {
+    text-align: center;
   }
 
   &__icon {
     font-size: 3.6rem;
-    color:$color-secondary-dark3
-    // color: #37b24d;
+    color: $color-secondary-dark3;
+    @include respond(phone) {
+      font-size: 2.8remrem;
+    }
   }
 }

@@ -1,6 +1,6 @@
 .hero-section {
   &__container {
-    padding: 3.6rem 6.4rem 3.6rem 6.4rem;
+    padding: 3.6rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -23,14 +23,15 @@
       @include respond(tab-port) {
         font-size: 6rem;
       }
+
+      @include respond(phone) {
+        font-size: 5rem;
+      }
     }
 
-    &--pro{
-      color:$color-secondary-dark3
+    &--pro {
+      color: $color-secondary-dark3;
     }
-
-    
-
   }
 
   &__image-box {
@@ -39,27 +40,27 @@
     border-radius: $border-radius;
     box-shadow: $shadow-light;
     overflow: hidden;
-    height: 43rem;
-    width: 130rem;
+    height: 38rem;
+    width: 100%;
 
     @include respond(tab-land) {
-      height: 33rem;
-      width: 100rem;
+      height: 31.5rem;
     }
 
     @include respond(tab-port) {
-      height: 50rem;
-      width: 75rem;
+      height: 20rem;
     }
 
     @include respond(phone) {
-      height: 40rem;
-      width: 60rem;
+      height: 15rem;
     }
 
     @include respond(phone-small) {
-      height: 26rem;
-      width: 40rem;
+      height: 10rem;
+    }
+
+    @include respond(big-desktop) {
+      height: 43rem;
     }
   }
 }

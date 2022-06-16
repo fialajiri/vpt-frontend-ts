@@ -11,7 +11,11 @@ body {
   color: $color-grey6;
   line-height: 1.5;
   letter-spacing: .25px;
-  color: $color-primary-dark2
+  color: $color-primary-dark2;
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 }
 
 .heading-secondary {
@@ -19,6 +23,10 @@ body {
   margin-bottom: 2.4rem;
   line-height: 1.4;
   color:$color-primary-dark2;  
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 }
 
 .heading-tertiary {
