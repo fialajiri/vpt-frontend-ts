@@ -494,14 +494,31 @@ button {
     top: 0;
     left: 0;
     width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .kandidat-card__side {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
     .kandidat-card__side--front {
-      position: relative; }
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media only screen and (max-width: 56.25em) {
+        .kandidat-card__side--front {
+          display: none; } }
     .kandidat-card__side--back {
       transform: rotateY(180deg);
       display: flex;
       flex-direction: row;
       gap: 2rem;
       border-radius: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .kandidat-card__side--back {
+          transform: none;
+          flex-direction: column-reverse;
+          gap: 0; } }
   .kandidat-card:hover .kandidat-card__side--front {
     transform: rotateY(-180deg); }
   .kandidat-card:hover .kandidat-card__side--back {
@@ -509,7 +526,7 @@ button {
   .kandidat-card__order-container {
     position: absolute;
     top: 5%;
-    left: 15%;
+    left: 12.5%;
     transform: translateX(-50%);
     color: #fab005;
     background-color: #0d3961;
@@ -518,35 +535,82 @@ button {
     font-size: 4rem;
     font-weight: 500;
     width: 9rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     opacity: 0.75; }
+    @media only screen and (min-width: 112.5em) {
+      .kandidat-card__order-container {
+        left: 15%;
+        font-size: 2.8rem;
+        font-weight: 500;
+        width: 7rem; } }
   .kandidat-card__image {
     display: flex;
     position: relative;
-    width: 52rem;
-    height: 35rem;
+    width: 100%;
+    height: 40rem;
     border-radius: 2rem;
     overflow: hidden; }
+    @media only screen and (min-width: 112.5em) {
+      .kandidat-card__image {
+        height: 30rem; } }
     .kandidat-card__image--small {
       display: flex;
       position: relative;
-      width: 26rem;
-      height: 35rem;
+      width: 55%;
+      height: 40rem;
       border-radius: 2rem;
       overflow: hidden;
       flex-shrink: 0; }
+      @media only screen and (max-width: 56.25em) {
+        .kandidat-card__image--small {
+          width: 80%;
+          height: 50rem; } }
+      @media only screen and (min-width: 112.5em) {
+        .kandidat-card__image--small {
+          height: 30rem; } }
   .kandidat-card__info {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     color: #0d3961;
-    padding: 1rem; }
+    padding: 1rem;
+    text-align: left; }
+    @media only screen and (max-width: 56.25em) {
+      .kandidat-card__info {
+        flex-direction: row;
+        align-items: center; } }
     .kandidat-card__info-name {
       font-size: 2.2rem;
       font-weight: 600; }
+      @media only screen and (max-width: 75em) {
+        .kandidat-card__info-name {
+          font-size: 2rem;
+          font-weight: 500; } }
+      @media only screen and (max-width: 56.25em) {
+        .kandidat-card__info-name {
+          font-size: 2.2rem;
+          font-weight: 600; } }
+      @media only screen and (min-width: 112.5em) {
+        .kandidat-card__info-name {
+          font-size: 1.8rem;
+          font-weight: 500; } }
     .kandidat-card__info-occupation {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 500; }
+      @media only screen and (max-width: 75em) {
+        .kandidat-card__info-occupation {
+          font-size: 1.6rem;
+          font-weight: 500; } }
+      @media only screen and (max-width: 56.25em) {
+        .kandidat-card__info-occupation {
+          font-size: 1.8rem;
+          font-weight: 500; } }
+      @media only screen and (min-width: 112.5em) {
+        .kandidat-card__info-occupation {
+          font-size: 1.4rem;
+          font-weight: 400; } }
 
 .kandidati-list {
   margin: 0 auto;
@@ -559,9 +623,11 @@ button {
     letter-spacing: -1px;
     color: #0d3961; }
   .kandidati-list ul {
-    margin: 0 4rem;
+    margin: 0 4rem 10rem 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
     column-gap: 8rem;
     row-gap: 8rem; }
     @media only screen and (max-width: 75em) {
@@ -569,6 +635,14 @@ button {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 6rem;
         row-gap: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .kandidati-list ul {
+        grid-template-columns: 1fr;
+        column-gap: 6rem;
+        row-gap: 12rem; } }
+    @media only screen and (min-width: 112.5em) {
+      .kandidati-list ul {
+        grid-template-columns: repeat(3, 1fr); } }
   .kandidati-list li {
     list-style: none; }
 
@@ -687,7 +761,7 @@ button {
     position: fixed;
     align-self: center;
     justify-self: center;
-    max-width: 130rem;
+    max-width: 140rem;
     padding: 0rem 4rem;
     display: flex;
     justify-content: space-between;
@@ -772,7 +846,7 @@ button {
   align-self: center;
   justify-self: center;
   background-color: #f1f1f1;
-  max-width: 130rem;
+  max-width: 140rem;
   width: 100%;
   height: 12rem;
   padding: 0 2rem;

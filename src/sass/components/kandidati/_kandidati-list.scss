@@ -18,9 +18,11 @@
   }
 
   & ul {
-    margin: 0 4rem;
+    margin: 0 4rem 10rem 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
     column-gap: 8rem;
     row-gap: 8rem;
 
@@ -28,6 +30,16 @@
       grid-template-columns: repeat(2, 1fr);
       column-gap: 6rem;
       row-gap: 6rem;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      column-gap: 6rem;
+      row-gap: 12rem;
+    }
+
+    @include respond(big-desktop) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
