@@ -44,6 +44,10 @@
       @include respond(phone) {
         width: 20rem;
       }
+
+      @include respond(phone-small) {
+        width: 16rem;
+      }
     }
 
     &__name {
@@ -92,6 +96,11 @@
       line-height: 1;
       letter-spacing: 1px;
       text-transform: uppercase;
+
+      @include respond(phone-small) {
+        font-size: 1.6rem;
+      }
+
     }
 
     &__email {

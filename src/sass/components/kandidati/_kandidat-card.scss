@@ -73,7 +73,7 @@
     opacity: 0.75;
 
     @include respond(big-desktop) {
-      left: 15%;
+      left: 14%;
       font-size: 2.8rem;
       font-weight: 500;
       width: 7rem;
@@ -85,16 +85,15 @@
       @include respond(tab-port) {
         display: block;
         position: absolute;
-        top: 22%;
-        left: 20%;
+        top: 8%;
+        left: 12%;
         z-index: 10;
       }
 
       @include respond(phone) {
         font-size: 3rem;
-        top: 20%;
         width: 7rem;
-        left: 10%;
+        left: 12%;
       }
 
       @include respond(phone-small) {
@@ -105,7 +104,30 @@
     }
   }
 
-  &__image {
+  &__image-container {
+    position: relative;
+    width: 100%;
+
+    &--back {
+      width: 55%;
+      flex-shrink: 0;
+
+      @include respond(tab-port) {
+        width: 80%;
+        height: 50rem;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+      }
+
+      @include respond(big-desktop) {
+        height: 30rem;
+      }
+    }
+  }
+
+  &__image-box {
     // 5244px*3496px
     display: flex;
     position: relative;
@@ -121,19 +143,13 @@
     &--small {
       display: flex;
       position: relative;
-      width: 55%;
+      width: 100%;
       height: 40rem;
       border-radius: $border-radius;
       overflow: hidden;
-      flex-shrink: 0;
 
       @include respond(tab-port) {
-        width: 80%;
         height: 50rem;
-      }
-
-      @include respond(phone) {
-        width: 100%;
       }
 
       @include respond(big-desktop) {

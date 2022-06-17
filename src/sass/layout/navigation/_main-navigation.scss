@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr;
   opacity: 0.95;
-  z-index: 101;
+  z-index: 10;
 
   &__drawer {
     & ul {
@@ -17,7 +17,6 @@
   }
 
   .main__navigation {
-    // border-bottom: $border-line;
     position: fixed;
     align-self: center;
     justify-self: center;
@@ -30,12 +29,27 @@
     height: 13rem;
     background-color: $color-background;
 
-    
+    &__button {
+      // display: none;
+
+      cursor: pointer;
+
+      &:hover .main__navigation__icon::before {
+        top: -1.5rem;
+      }
+
+      &:hover .main__navigation__icon::after {
+        top: 1.5rem;
+      }
+
+      @include respond(tab-port) {
+        display: flex;
+        align-items: center;
+      }
+    }
 
     &__checkbox {
       display: none;
-
-     
     }
 
     &__button {
@@ -80,26 +94,20 @@
       }
     }
 
-    &__button:hover &__icon::before {
-      top: -1.5rem;
-    }
-
-    &__button:hover &__icon::after {
-      top: 1.5rem;
-    }
-
-    &__checkbox:checked + &__button &__icon {
+    &__checkbox:checked + .main__navigation__button .main__navigation__icon {
       background-color: transparent;
     }
 
-    &__checkbox:checked + &__button &__icon::before {
+    &__checkbox:checked + .main__navigation__button .main__navigation__icon::before {
       top: 0;
       transform: rotate(135deg);
     }
 
-    &__checkbox:checked + &__button &__icon::after {
+    &__checkbox:checked + .main__navigation__button .main__navigation__icon::after {      
       top: 0;
       transform: rotate(-135deg);
     }
   }
 }
+
+

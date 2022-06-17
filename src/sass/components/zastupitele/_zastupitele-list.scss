@@ -4,6 +4,18 @@
     max-width: 140rem;
     text-align: center;
   }
+
+  &__wrapper {
+    padding: 0 4rem;
+
+    @include respond(phone-small) {
+      padding: 0 2rem;
+    }
+
+    @include respond(big-desktop) {
+      padding: 0 2rem;
+    }
+  }
   &__title {
     margin: 10rem auto;
     margin-bottom: 3rem;
@@ -11,6 +23,17 @@
     font-weight: 500;
     letter-spacing: -1px;
     color: $color-primary-dark2;
+
+    @include respond(phone) {
+      font-size: 6rem;
+      font-weight: 500;
+    }
+
+    @include respond(phone) {
+      margin: 6rem auto;
+      font-size: 5rem;
+      font-weight: 500;
+    }
   }
 
   &__list {
@@ -18,15 +41,18 @@
     display: flex;
     flex-direction: column;
 
-    & li {
-    }
-
     & li:nth-child(odd) {
-        align-self: flex-end;
+      align-self: flex-end;
+      @include respond(tab-port) {
+        align-self: center;
+      }
     }
 
     & li:nth-child(even) {
-        align-self: flex-start;
+      align-self: flex-start;
+      @include respond(tab-port) {
+        align-self: center;
+      }
     }
   }
 }
