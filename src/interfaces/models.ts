@@ -19,3 +19,12 @@ export interface KandidatDoc {
   occupation: string;
   order: number;
 }
+
+export interface AktualitaDoc {
+  id: string;
+  date: Date;
+  title: string;
+  subtitle: string;
+  message: string;
+  image: ImageObject;
+}
