@@ -25,7 +25,11 @@
       }
 
       @include respond(phone) {
-        font-size: 5rem;
+        font-size: 4rem;
+      }
+
+      @include respond(phone-small) {
+        font-size: 3rem;
       }
     }
 

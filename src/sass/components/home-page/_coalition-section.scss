@@ -4,7 +4,7 @@
     padding: 4.8rem 0 12.8rem 0;
 
     @include respond(phone) {
-      padding: 3rem 0;
+      padding: 1rem 0;
     }
   }
 
@@ -18,7 +18,7 @@
 
     @include respond(phone) {
       flex-direction: column;
-      gap: 3rem;
+      gap: 5rem;
     }
 
     & img {

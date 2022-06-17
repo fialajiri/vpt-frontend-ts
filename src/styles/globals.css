@@ -57,6 +57,9 @@ body {
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 3rem; } }
+  @media only screen and (max-width: 22.5em) {
+    .heading-secondary {
+      font-size: 2.2rem; } }
 
 .heading-tertiary {
   font-size: 2rem;
@@ -65,6 +68,12 @@ body {
   color: #966a03;
   text-transform: uppercase;
   text-align: left; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-tertiary {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 22.5em) {
+    .heading-tertiary {
+      font-size: 1.5rem; } }
 
 a {
   color: inherit;
@@ -129,7 +138,10 @@ button {
       font-size: 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .hero-section__heading--volba, .hero-section__heading--teplice, .hero-section__heading--pro {
-      font-size: 5rem; } }
+      font-size: 4rem; } }
+  @media only screen and (max-width: 22.5em) {
+    .hero-section__heading--volba, .hero-section__heading--teplice, .hero-section__heading--pro {
+      font-size: 3rem; } }
 
 .hero-section__heading--pro {
   color: #966a03; }
@@ -163,7 +175,7 @@ button {
   padding: 4.8rem 0 12.8rem 0; }
   @media only screen and (max-width: 37.5em) {
     .coalition__container {
-      padding: 3rem 0; } }
+      padding: 1rem 0; } }
 
 .coalition__logo-container {
   max-width: 130rem;
@@ -175,7 +187,7 @@ button {
   @media only screen and (max-width: 37.5em) {
     .coalition__logo-container {
       flex-direction: column;
-      gap: 3rem; } }
+      gap: 5rem; } }
   .coalition__logo-container img {
     filter: brightness(0);
     opacity: 50%;
@@ -370,6 +382,10 @@ button {
     border: 2px solid #966a03;
     border-radius: 10px;
     transition: all 400ms; }
+    @media only screen and (max-width: 22.5em) {
+      .past-election__grid__item {
+        margin: 2rem;
+        padding: 2rem; } }
     .past-election__grid__item:hover {
       transform: scale(1.1); }
     .past-election__grid__item ul {
@@ -383,9 +399,15 @@ button {
       font-size: 1.8rem;
       font-weight: 400;
       align-items: center; }
+      @media only screen and (max-width: 22.5em) {
+        .past-election__grid__item li {
+          font-size: 1.2rem; } }
     .past-election__grid__item--icon {
       font-size: 3.6rem;
       color: #966a03; }
+      @media only screen and (max-width: 22.5em) {
+        .past-election__grid__item--icon {
+          font-size: 2.6rem; } }
 
 .future-election__container {
   margin: 6.4rem 0; }
@@ -410,6 +432,10 @@ button {
     transition: all 400ms;
     color: #145a9b;
     font-weight: 600; }
+    @media only screen and (max-width: 22.5em) {
+      .future-election__grid__item {
+        margin: 2rem;
+        padding: 2rem; } }
     .future-election__grid__item ul {
       margin: 2.4rem;
       display: flex;
@@ -421,8 +447,10 @@ button {
       font-size: 1.8rem;
       font-weight: 400;
       align-items: center; }
+      @media only screen and (max-width: 22.5em) {
+        .future-election__grid__item li {
+          font-size: 1.4rem; } }
       .future-election__grid__item li strong {
-        font-size: 1.8rem;
         font-weight: 600;
         color: #0d3961; }
     .future-election__grid__item:hover {
@@ -430,6 +458,9 @@ button {
     .future-election__grid__item--icon {
       font-size: 3.6rem;
       color: #145a9b; }
+      @media only screen and (max-width: 22.5em) {
+        .future-election__grid__item--icon {
+          font-size: 2.6rem; } }
 
 .zastupitele-list__container {
   margin: 0 auto;
@@ -581,7 +612,7 @@ button {
     transform: translateX(-50%);
     color: #fab005;
     background-color: #0d3961;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 100%;
     font-size: 4rem;
     font-weight: 500;
@@ -602,12 +633,13 @@ button {
         .kandidat-card__order-container--back {
           display: block;
           position: absolute;
-          top: 20%;
-          left: 19%;
+          top: 22%;
+          left: 20%;
           z-index: 10; } }
       @media only screen and (max-width: 37.5em) {
         .kandidat-card__order-container--back {
           font-size: 3rem;
+          top: 20%;
           width: 7rem;
           left: 10%; } }
       @media only screen and (max-width: 22.5em) {
@@ -849,7 +881,13 @@ button {
   display: grid;
   grid-template-columns: 1fr;
   opacity: 0.95;
-  z-index: 10; }
+  z-index: 101; }
+  .navigation__drawer ul {
+    margin-top: 15rem;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
   .navigation .main__navigation {
     position: fixed;
     align-self: center;
@@ -866,13 +904,19 @@ button {
       display: none; }
     .navigation .main__navigation__button {
       display: none; }
+      @media only screen and (max-width: 56.25em) {
+        .navigation .main__navigation__button {
+          display: inline-block; } }
+    @media only screen and (max-width: 56.25em) {
+      .navigation .main__navigation__links {
+        display: none; } }
     .navigation .main__navigation__icon {
       position: relative; }
       .navigation .main__navigation__icon, .navigation .main__navigation__icon::after, .navigation .main__navigation__icon::before {
         display: inline-block;
         height: 3px;
         width: 4.5rem;
-        background-color: #fff; }
+        background-color: #0d3961; }
       .navigation .main__navigation__icon::before, .navigation .main__navigation__icon::after {
         content: "";
         position: absolute;
@@ -912,6 +956,36 @@ button {
     .nav__list__item--active {
       color: #966a03; }
 
+.navigation__drawer {
+  display: block; }
+
+.side-drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 40%;
+  background: rgba(241, 241, 241, 0.95);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2); }
+
+.slide-in-left-enter {
+  transform: translateX(-100%); }
+
+.slide-in-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 200ms; }
+
+.slide-in-left-exit {
+  transform: translateX(0%);
+  opacity: 1; }
+
+.slide-in-left-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 200ms; }
+
 .logo-image {
   height: 12rem;
   cursor: pointer; }
@@ -942,17 +1016,17 @@ button {
   max-width: 140rem;
   width: 100%;
   height: 12rem;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: flex-end; }
 
 .footer__created-by {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  color: #0e0f11; }
+  color: #3a4e4c; }
   .footer__created-by__text {
     font-size: 1rem;
     text-transform: uppercase;
@@ -961,8 +1035,11 @@ button {
     line-height: 1.3; }
   .footer__created-by__logo {
     position: relative;
-    width: 20rem;
+    width: 25rem;
     height: 7rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__created-by__logo {
+        width: 20rem; } }
   .footer__created-by__name {
     font-size: 2rem;
     font-weight: 600;
@@ -970,8 +1047,12 @@ button {
     letter-spacing: 1px; }
   .footer__created-by__email {
     text-decoration: none;
-    border-bottom: 1px solid #0e0f11;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #3A4E4C;
     line-height: 1.2; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__created-by__email {
+        font-size: 1.2rem; } }
 
 @media only screen and (max-width: 56.25em) {
   .footer__navigation {
@@ -982,7 +1063,7 @@ button {
   flex-direction: column;
   align-items: flex-end;
   gap: 0.5rem;
-  color: #0e0f11; }
+  color: #3A4E4C; }
   .footer__photos-by__text {
     font-size: 1rem;
     text-transform: uppercase;
@@ -997,6 +1078,10 @@ button {
     text-transform: uppercase; }
   .footer__photos-by__email {
     text-decoration: none;
+    font-size: 1.3rem;
     color: #0d3961;
     border-bottom: 1px solid #0d3961;
     line-height: 1.2; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__photos-by__email {
+        font-size: 1.2rem; } }

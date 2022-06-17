@@ -20,7 +20,9 @@ const KandidatCard: React.FC<KandidatCardProps> = ({ kandidat }) => {
         <div className="kandidat-card__order-container">{kandidat.order}</div>
       </div>
       <div className=" kandidat-card__side kandidat-card__side--back">
-      <div className="kandidat-card__order-container kandidat-card__order-container--back">{kandidat.order}</div>
+        <div className="kandidat-card__order-container kandidat-card__order-container--back">
+          {kandidat.order}
+        </div>
         <div className="kandidat-card__image--small">
           <Image
             src={kandidat.image}
@@ -34,7 +36,6 @@ const KandidatCard: React.FC<KandidatCardProps> = ({ kandidat }) => {
           <p className="kandidat-card__info-occupation">
             {kandidat.occupation}
           </p>
-          
         </div>
       </div>
     </div>
