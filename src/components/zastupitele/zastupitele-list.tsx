@@ -9,7 +9,7 @@ const ZastupiteleList: React.FC<ZastupiteleProps> = ({ zastupitele }) => {
   return (
     <section className="zastupitele-list__container">
       <div className="zastupitele-list__wrapper">
-        <h1 className="headingPrimary zastupitele-list__title">
+        <h1 className="heading-primary zastupitele-list__title">
           Vaši Zastupitelé
         </h1>
         <ul className="zastupitele-list__list">

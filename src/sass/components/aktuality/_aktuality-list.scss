@@ -1,0 +1,58 @@
+.aktuality {
+  margin: 10rem 0;
+  max-width: 140rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond(phone) {
+    margin-top: 4rem;
+  }
+
+  &__title {
+    font-size: 8.6rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+
+    @include respond(tab-port) {
+      font-size: 6rem;
+    }
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    padding: 10rem;
+    list-style: none;
+
+    @include respond(tab-land) {
+      padding: 2rem;
+    }
+
+    &-item {
+      width: 100rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      padding: 6rem;
+      box-shadow: $shadow-dark;
+      border-radius: $border-radius;
+
+      @include respond(tab-land) {
+        width: auto;
+        max-width: 90rem;
+        padding: 4rem;
+      }
+
+      @include respond(phone) {
+       padding: 4rem;
+      }
+    }
+  }
+}

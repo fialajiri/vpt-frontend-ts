@@ -5,9 +5,10 @@ body {
   background-color: #f1f1f1;
 }
 
-.headingPrimary {
+.heading-primary {
   font-size: 4rem;
   font-weight: 700;
+  text-transform: uppercase;
   color: $color-grey6;
   line-height: 1.5;
   letter-spacing: .25px;

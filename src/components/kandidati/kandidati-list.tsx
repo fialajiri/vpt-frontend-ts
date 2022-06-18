@@ -8,7 +8,7 @@ interface KandidatiListProps {
 const KandidatiList: React.FC<KandidatiListProps> = ({ kandidati }) => {
   return (
     <section className="kandidati-list">
-      <h1 className="headingPrimary kandidati-list__title">Naši Kandidáti</h1>
+      <h1 className="heading-primary kandidati-list__title">Naši Kandidáti</h1>
       <ul>
         {kandidati.map((kandidat) => (
           <li key={kandidat.id}>

@@ -27,6 +27,9 @@ const AktualityPage: NextPage<AktualityProps> = ({ aktuality }) => {
 
 export const getStaticProps = async () => {
   const aktuality: AktualitaDoc[] = await getAllNews();
+  aktuality.sort((a, b) => {
+    return Date.parse(b.date) - Date.parse(a.date);
+  });
 
   return {
     props: {

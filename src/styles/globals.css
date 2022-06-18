@@ -38,15 +38,16 @@ body {
   font-weight: 400;
   background-color: #f1f1f1; }
 
-.headingPrimary {
+.heading-primary {
   font-size: 4rem;
   font-weight: 700;
+  text-transform: uppercase;
   color: #222;
   line-height: 1.5;
   letter-spacing: .25px;
   color: #0d3961; }
   @media only screen and (max-width: 37.5em) {
-    .headingPrimary {
+    .heading-primary {
       font-size: 3rem; } }
 
 .heading-secondary {
@@ -123,7 +124,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem; }
+  gap: 4rem; }
 
 .hero-section__heading--volba, .hero-section__heading--teplice, .hero-section__heading--pro {
   display: inline-block;
@@ -145,6 +146,9 @@ button {
 
 .hero-section__heading--pro {
   color: #966a03; }
+
+.hero-section__info-text {
+  align-self: flex-start; }
 
 .hero-section__image-box {
   position: relative;
@@ -833,6 +837,98 @@ button {
         grid-template-columns: repeat(3, 1fr); } }
   .kandidati-list li {
     list-style: none; }
+
+.aktualita-card__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
+.aktualita-card__heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0; }
+
+.aktualita-card__date {
+  font-size: 2rem;
+  font-weight: 500; }
+
+.aktualita-card__perex {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #966a03;
+  text-transform: uppercase; }
+
+.aktualita-card__message {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6; }
+  .aktualita-card__message p {
+    margin-bottom: 1rem; }
+  .aktualita-card__message ul,
+  .aktualita-card__message ol {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+  .aktualita-card__message ul {
+    list-style: none; }
+  .aktualita-card__message ol {
+    margin-left: 2rem; }
+
+.aktualita-card__image {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  border-radius: 2rem;
+  overflow: hidden; }
+  .aktualita-card__image img {
+    border-radius: 2rem; }
+
+.aktuality {
+  margin: 10rem 0;
+  max-width: 140rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .aktuality {
+      margin-top: 4rem; } }
+  .aktuality__title {
+    font-size: 8.6rem;
+    font-weight: 500;
+    letter-spacing: -1px; }
+    @media only screen and (max-width: 56.25em) {
+      .aktuality__title {
+        font-size: 6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .aktuality__title {
+        font-size: 4rem; } }
+  .aktuality__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    padding: 10rem;
+    list-style: none; }
+    @media only screen and (max-width: 75em) {
+      .aktuality__list {
+        padding: 2rem; } }
+    .aktuality__list-item {
+      width: 100rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      padding: 6rem;
+      box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+      border-radius: 2rem; }
+      @media only screen and (max-width: 75em) {
+        .aktuality__list-item {
+          width: auto;
+          max-width: 90rem;
+          padding: 4rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .aktuality__list-item {
+          padding: 4rem; } }
 
 .button {
   line-height: 1.2 !important;

@@ -22,7 +22,7 @@ export interface KandidatDoc {
 
 export interface AktualitaDoc {
   id: string;
-  date: Date;
+  date: string;
   title: string;
   subtitle: string;
   message: string;

@@ -7,11 +7,11 @@ interface AktualityListProps {
 
 const AktualityList: React.FC<AktualityListProps> = ({ aktuality }) => {
   return (
-    <section className="aktuality-list">
-      <h1 className="headingPrimary"></h1>
-      <ul>
+    <section className="aktuality">
+      <h1 className="heading-primary aktuality__title">Aktuality</h1>
+      <ul className="aktuality__list">
         {aktuality.map((aktualita) => (
-          <li key={aktualita.id}>
+          <li className="aktuality__list-item" key={aktualita.id}>
             <AktualitaCard aktualita={aktualita} />
           </li>
         ))}
