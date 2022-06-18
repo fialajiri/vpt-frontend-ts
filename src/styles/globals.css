@@ -315,9 +315,10 @@ button {
 .accomplishement--solved__program {
   font-weight: 500;
   color: #0d3961;
-  border-bottom: 1px solid #0d3961; }
+  border-bottom: 1px solid #0d3961;
+  transition: all 300ms; }
   .accomplishement--solved__program:hover {
-    font-size: 2.2rem; }
+    font-size: 2rem; }
 
 .program__container {
   margin-bottom: 12.8rem; }
