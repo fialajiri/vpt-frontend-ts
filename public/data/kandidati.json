@@ -10,7 +10,7 @@
     "id": "id2",
     "name": "Adam Souček",
     "image": "/images/kandidati/2_soucek.jpg",
-    "occupation": "úředník odboru zdravotnictví, místopředseda Spolku lokálních drah",
+    "occupation": "úředník odboru zdravotnictví, iniciátor obnovení Kozí dráhy",
     "order": 2
   },
   {
@@ -38,7 +38,7 @@
     "id": "id6",
     "name": "Bc. Petr Slavíček",
     "image": "/images/kandidati/6_slavicek.jpg",
-    "occupation": "vedoucí programátor",
+    "occupation": "programátor, vedoucí vývojového oddělení",
     "order": 6
   },
   {
@@ -52,14 +52,14 @@
     "id": "id8",
     "name": "Mgr. Marcela Bartáková",
     "image": "/images/kandidati/8_bartakova.jpg",
-    "occupation": "vedoucí pobočky Probační a mediační služby",
+    "occupation": "vedoucí střediska státní organizace v trestní justici",
     "order": 8
   },
   {
     "id": "id9",
     "name": "Mgr. Matěj Hon",
     "image": "/images/kandidati/9_matej-hon.jpg",
-    "occupation": "právník, odborník na sociální politiku",
+    "occupation": "právník, odborník na sociální politiku a bydlení",
     "order": 9
   },
   {
@@ -87,7 +87,7 @@
     "id": "id13",
     "name": "Ing. Adam Tomáš",
     "image": "/images/kandidati/13_tomas.jpg",
-    "occupation": "sociální pracovník, trenér bojového umění",
+    "occupation": "jednatel rodinné firmy, předseda sportovního klubu",
     "order": 13
   },
   {
@@ -108,7 +108,7 @@
     "id": "id16",
     "name": "Ing. Hana Rezková",
     "image": "/images/kandidati/16_rezkova.jpg",
-    "occupation": "obchodní zástupkyně, bývalá trenérka mládežnického hokeje",
+    "occupation": "inženýrka chemie, obchodní zástupkyně",
     "order": 16
   },
   {
@@ -129,7 +129,7 @@
     "id": "id19",
     "name": "Mgr. Alexandra Bernardová",
     "image": "/images/kandidati/19_bernardova.jpg",
-    "occupation": "vědecká pracovnice",
+    "occupation": "bioložka, vědecká pracovnice",
     "order": 19
   },
   {
@@ -143,7 +143,7 @@
     "id": "id21",
     "name": "Daniel Sajdl",
     "image": "/images/kandidati/21_sajdl.jpg",
-    "occupation": "materiálový specialista",
+    "occupation": "plánovač výroby",
     "order": 21
   },
   
@@ -151,21 +151,21 @@
     "id": "id22",
     "name": "Mgr. Marie Doskočilová",
     "image": "/images/kandidati/22_doskocilova.jpg",
-    "occupation": "hudebnice, pastorační asistentka",
+    "occupation": "hudebnice, členka Severočeské filharmonie Teplice",
     "order": 22
   },
   {
     "id": "id23",
     "name": "Mgr. Josef Hon",
     "image": "/images/kandidati/23_josef-hon.jpg",
-    "occupation": "zakladatel Arkadie",
+    "occupation": "ředitel Arkadie v penzi",
     "order": 23
   },
   {
     "id": "id24",
-    "name": "Emílie Rážová",
+    "name": "Bc. Emílie Rážová",
     "image": "/images/kandidati/24_mrackova.jpg",
-    "occupation": "architektka",
+    "occupation": "stážistka Kanceláře architektka města",
     "order": 24
   },
   {
