@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <title>Volba pro Teplice</title>
         <meta
           name="keywords"
-          content="Volba pro Teplice, Teplice, politika, politická strana, volby 2022, program"
+          content="Volba pro Teplice, Teplice, politika, politická strana, volby 2022, program, městská zeleň, bydlení Teplice, parkování Teplice, koupaliště Teplice, kultura Teplice, zastupitelstvo Teplice, pořádek Teplice, územní plán Teplice, dětská hřiště Teplice, kumunální politika, komunita Teplice, Piráti Teplice, Zelenní Teplice, Lidovci Teplice, Nezávislí Teplice, koalice Teplice"
         />
         <meta
           name="description"
