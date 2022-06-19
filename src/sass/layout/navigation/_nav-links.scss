@@ -4,6 +4,16 @@
     display: flex;
     align-items: center;
     gap: 3.2rem;
+    display: flex;
+    align-items: center;
+
+    &__icon{
+      display: flex;
+      align-items: center;
+      font-size: 3rem;
+      
+    }
+
 
     &__item {
       text-transform: uppercase;
@@ -22,5 +32,7 @@
         color: $color-secondary-dark3;
       }
     }
+
+    
   }
 }

@@ -1125,7 +1125,13 @@ button {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem; }
+  gap: 3.2rem;
+  display: flex;
+  align-items: center; }
+  .nav__list__icon {
+    display: flex;
+    align-items: center;
+    font-size: 3rem; }
   .nav__list__item {
     text-transform: uppercase;
     display: inline-block;
