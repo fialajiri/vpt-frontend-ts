@@ -35,25 +35,25 @@ const AktualitaNew: React.FC = () => {
     event: React.FormEvent<HTMLFormElement>
   ) => {
     event.preventDefault();
-    try {
-      const formData = new FormData();
-      formData.append("title", formState.inputs.title.value);
-      formData.append("subtitle", formState.inputs.subtitle.value);
-      formData.append("message", editorValue);
-      formData.append("image", selectedFiles[0]);
-      await sendRequest(
-        process.env.REACT_APP_BACKEND_URL + "/news",
-        "POST",
-        formData,
-        {
-          Authorization: "Bearer " + auth.token,
-        }
-      );
+    // try {
+    //   const formData = new FormData();
+    //   formData.append("title", formState.inputs.title.value);
+    //   formData.append("subtitle", formState.inputs.subtitle.value);
+    //   formData.append("message", editorValue);
+    //   formData.append("image", selectedFiles[0]);
+    //   await sendRequest(
+    //     process.env.REACT_APP_BACKEND_URL + "/news",
+    //     "POST",
+    //     formData,
+    //     {
+    //       Authorization: "Bearer " + auth.token,
+    //     }
+    //   );
 
-      router.push("/aktuality");
-    } catch (err) {
-      console.log(err);
-    }
+    //   router.push("/aktuality");
+    // } catch (err) {
+    //   console.log(err);
+    // }
   };
   
 
