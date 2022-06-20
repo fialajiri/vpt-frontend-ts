@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import 'react-quill/dist/quill.snow.css'
+
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import type { AppProps } from "next/app";

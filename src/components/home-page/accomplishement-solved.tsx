@@ -3,7 +3,9 @@ import { CheckCircle } from "phosphor-react";
 const AccomplishementSolved: React.FC = () => {
   return (
     <div className="accomplishement--solved__container">
-      <h3 className="heading-tertiary accomplishement--solved__heading">Splněno</h3>
+      <h3 className="heading-tertiary accomplishement--solved__heading">
+        Splněno
+      </h3>
       <ul className="accomplishement--solved__list">
         <li>
           <CheckCircle className="accomplishement--solved__icon" />
@@ -25,13 +27,12 @@ const AccomplishementSolved: React.FC = () => {
           <CheckCircle className="accomplishement--solved__icon" />
           <span>Pravidelná setkávání s občany</span>
         </li>
-
-        <li>
+        {/* <li>
           <CheckCircle className="accomplishement--solved__icon" />
           <span>
              <a className="accomplishement--solved__program" href="#">Moderní program</a> pro naše město
           </span>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

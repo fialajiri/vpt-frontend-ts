@@ -24,13 +24,13 @@ const NavigationLinks: React.FC = () => {
       <li className={getClass("/aktuality")}>
         <Link href="/aktuality">Aktuality</Link>
       </li>
-      <li className={getClass("/aktuality")}>
+      <li className="nav__list__item">
         <a href="https://www.facebook.com/search/top?q=volba%20pro%20teplice" target="_blank">
           <FacebookLogo className="nav__list__icon" weight="bold"/>
         </a>
       </li>
-      <li className={getClass("/aktuality")}>
-        <a href="https://instagram.com/volbaproteplice?igshid=YmMyMTA2M2Y=" target="_blank" >
+      <li className="nav__list__item">
+        <a href="https://instagram.com/volbaproteplice?igshid=YmMyMTA2M2Y=" target="_blank">
           <InstagramLogo className="nav__list__icon" weight="bold"/>
         </a>
       </li>
