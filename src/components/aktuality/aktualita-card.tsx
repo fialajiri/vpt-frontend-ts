@@ -7,11 +7,12 @@ interface AktualitaCardProps {
 }
 
 const AktualitaCard: React.FC<AktualitaCardProps> = ({ aktualita }) => {
-  console.log(aktualita.date);
   return (
     <Fragment>
       <div className="aktualita-card__text-container">
-        <h2 className="heading-secondary aktualita-card__heading">{aktualita.title}</h2>
+        <h2 className="heading-secondary aktualita-card__heading">
+          {aktualita.title}
+        </h2>
         <time className="aktualita-card__date">
           {new Date(aktualita.date).toLocaleDateString("cs-CZ")}
         </time>
@@ -22,7 +23,11 @@ const AktualitaCard: React.FC<AktualitaCardProps> = ({ aktualita }) => {
         ></div>
       </div>
       <figure className="aktualita-card__image">
-        <Image src={aktualita.image.imageUrl} layout="fill" objectFit="contain" />
+        <Image
+          src={aktualita.image.imageUrl}
+          layout="fill"
+          objectFit="contain"
+        />
       </figure>
     </Fragment>
   );

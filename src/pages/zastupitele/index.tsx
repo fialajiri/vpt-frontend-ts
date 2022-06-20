@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import { Fragment } from "react";
 import { ZastupitelDoc } from "../../interfaces/models";
 import ZastupiteleList from "../../components/zastupitele/zastupitele-list";
+import ZastupiteleHead from "../../components/meta/members-head";
 import { getAllMembers } from "../../utilities/api-utils";
 
 interface ZastupiteleProps {
@@ -10,18 +10,14 @@ interface ZastupiteleProps {
 }
 
 const Zastupitele: NextPage<ZastupiteleProps> = ({ zastupitele }) => {
-  let loadedMemberNames: string = "";
-  zastupitele.map((element) => {
-    loadedMemberNames += `${element.name}, `;
-  });
-
   return (
     <Fragment>
-      <Head>
-        <title>Zastupitelé</title>
-        <meta name="keywords" content={loadedMemberNames} />
-        <meta name="description" content="Seznam zastupitelů Volby pro Teplice" />
-      </Head>
+      <ZastupiteleHead
+        title="Naši zastupitelé"
+        url="/zastupitele"
+        description="Zastupitelé strany Volba pro Teplice v městském zastupitelstvu"
+        zastupitele={zastupitele}
+      />
       <ZastupiteleList zastupitele={zastupitele} />
     </Fragment>
   );

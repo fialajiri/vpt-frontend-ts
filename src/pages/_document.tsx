@@ -5,6 +5,17 @@ class MyDocument extends Document {
     return (
       <Html lang="cs">
         <Head>
+          <meta property="og:type" content="website" />
+          <meta property="og:locale" content="cs_CZ" />
+          <meta property="og:image" content={`${process.env.HOST_URL}/logos/vpt_logo_new.png`} />
+          <meta
+            name="keywords"
+            content="Volba pro Teplice, Teplice, politika, politická strana, volby 2022, program, městská zeleň, bydlení Teplice, parkování Teplice, koupaliště Teplice, kultura Teplice, zastupitelstvo Teplice, pořádek Teplice, územní plán Teplice, dětská hřiště Teplice, kumunální politika, komunita Teplice, Piráti Teplice, Zelenní Teplice, Lidovci Teplice, Nezávislí Teplice, koalice Teplice"
+          />
+          <meta
+            name="description"
+            content="Domovská stránka teplické politické strany - Volba pro Teplice"
+          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

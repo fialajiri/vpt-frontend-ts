@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Fragment } from "react";
 import { NextPage } from "next";
 import { AktualitaDoc } from "../../interfaces/models";
-
+import AktualityHead from "../../components/meta/aktuality-head";
 import { getAllNews } from "../../utilities/api-utils";
 import AktualityList from "../../components/aktuality/aktuality-list";
 
@@ -15,11 +15,12 @@ const AktualityPage: NextPage<AktualityProps> = ({ aktuality }) => {
 
   return (
     <Fragment>
-      <Head>
-        <title>Aktuality</title>
-        <meta name="keywords" content={aktualityMetaData} />
-        <meta name="description" content="Aktuality Volby pro Teplice" />
-      </Head>
+      <AktualityHead
+        title="Aktuality"
+        description="Aktuality Volby pro Teplice"
+        url="aktuality"
+        aktuality={aktuality}
+      />
       <AktualityList aktuality={aktuality} />
     </Fragment>
   );

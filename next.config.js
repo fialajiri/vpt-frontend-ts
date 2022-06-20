@@ -18,6 +18,7 @@ module.exports = (phase) => {
         mongodb_database: "volba",
         REACT_APP_BACKEND_URL: "https://vpt-backend.herokuapp.com/api",
         NEXT_PUBLIC_GOOGLE_ANALYTICS: "G-DYBEGLWFK7",
+        HOST_URL: "https://vpt-frontend-ts.vercel.app/"
       },
     };
   }
@@ -34,6 +35,7 @@ module.exports = (phase) => {
       mongodb_database: "nextjs-blog",
       REACT_APP_BACKEND_URL: "https://vpt-backend.herokuapp.com/api",
       NEXT_PUBLIC_GOOGLE_ANALYTICS: "G-DYBEGLWFK7",
+      HOST_URL: "https://vpt-frontend-ts.vercel.app/"
     },
   };
 };
