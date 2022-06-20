@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import { useRouter } from "next/router";
 import { useForm } from "../../hooks/use-form-hook";
 import Input from "../form-elements/input";
 import MultipleImageUpload from "../form-elements/multiple-image-upload";
@@ -10,6 +11,7 @@ import {
 } from "../../validators/validators";
 
 const AktualitaNew: React.FC = () => {
+  const router = useRouter()
   const [editorValue, setEditorValue] = useState<string>('hello from quill');
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [imageIsValid, setImageIsValid] = useState<boolean>(false);
@@ -33,7 +35,27 @@ const AktualitaNew: React.FC = () => {
     event: React.FormEvent<HTMLFormElement>
   ) => {
     event.preventDefault();
+    try {
+      const formData = new FormData();
+      formData.append("title", formState.inputs.title.value);
+      formData.append("subtitle", formState.inputs.subtitle.value);
+      formData.append("message", editorValue);
+      formData.append("image", selectedFiles[0]);
+      await sendRequest(
+        process.env.REACT_APP_BACKEND_URL + "/news",
+        "POST",
+        formData,
+        {
+          Authorization: "Bearer " + auth.token,
+        }
+      );
+
+      router.push("/aktuality");
+    } catch (err) {
+      console.log(err);
+    }
   };
+  
 
   return (
     <Fragment>

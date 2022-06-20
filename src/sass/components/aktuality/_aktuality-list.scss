@@ -1,5 +1,5 @@
 .aktuality {
-  margin: 10rem 0;
+  margin: 10rem auto;
   max-width: 140rem;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,8 @@
       }
 
       @include respond(phone) {
-       padding: 4rem;
+        padding: 4rem;
+        max-width: 60rem;
       }
     }
   }
