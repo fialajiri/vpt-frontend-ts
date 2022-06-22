@@ -11,8 +11,6 @@ interface AktualityProps {
 }
 
 const AktualityPage: NextPage<AktualityProps> = ({ aktuality }) => {
-  let aktualityMetaData = "";
-
   return (
     <Fragment>
       <AktualityHead

@@ -1,4 +1,5 @@
 import { AktualitaDoc } from "../../interfaces/models";
+import Button from "../ui-elements/button";
 import AktualitaCard from "./aktualita-card";
 
 interface AktualityListProps {
@@ -16,6 +17,7 @@ const AktualityList: React.FC<AktualityListProps> = ({ aktuality }) => {
           </li>
         ))}
       </ul>
+      <Button link="aktuality/new">Přidat </Button>
     </section>
   );
 };

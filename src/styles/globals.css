@@ -1003,6 +1003,51 @@ button {
   background: rgba(13, 57, 97, 0.4);
   z-index: 20; }
 
+.loading-spinner__as-overlay {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(150, 106, 3, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.loading-spinner__dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px; }
+  .loading-spinner__dual-ring::after {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 2px solid #d1c7a3;
+    border-color: #000 transparent #000 transparent;
+    animation: lds-dual-ring 1.2s linear infinite; }
+
+.loading-spinner__logo {
+  border-radius: 50%;
+  animation: pulsate 1.3s linear infinite; }
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.8); }
+  70% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(0.8); } }
+
 .form-control {
   margin: .75rem 0; }
   .form-control label,
@@ -1043,7 +1088,7 @@ button {
   .form-control--invalid input,
   .form-control--invalid textarea,
   .form-control--invalid select {
-    border-color: #af7b04;
+    border-color: #966a03;
     background: #fcebeb; }
 
 .multiple-image-upload__container {
@@ -1063,6 +1108,48 @@ button {
     justify-content: center; }
   .multiple-image-upload__form__button {
     align-self: center; }
+
+.editor {
+  border-radius: 10px; }
+  .editor label {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem; }
+
+.ck-editor__editable_inline {
+  min-height: 500px; }
+
+.ck-toolbar {
+  background-color: #e7e1e1 !important;
+  border-radius: 2rem 2rem 0 0 !important;
+  border-top: 1px solid #966a03 !important;
+  border-left: 1px solid #966a03 !important;
+  border-right: 1px solid #966a03 !important; }
+
+.ck .ck-editor__main > .ck-editor__editable {
+  background-color: #e7e1e1 !important;
+  border-radius: 0 0 2rem 2rem !important;
+  border-top: 1px solid #966a03 !important;
+  border-bottom: 1px solid #966a03 !important;
+  border-left: 1px solid #966a03 !important;
+  border-right: 1px solid #966a03 !important;
+  color: #000; }
+
+.ck .ck-editor__main > .ck-editor__editable:focus {
+  border: none !important;
+  border: 1px solid #966a03 !important;
+  box-shadow: none !important;
+  background: #e7e1e1 !important;
+  color: #000; }
+
+.editor body,
+.editor p,
+.editor ul,
+.editor ol {
+  margin-left: 2rem;
+  font-size: 1.5rem !important;
+  font-family: inherit;
+  line-height: 1.6; }
 
 .navigation {
   height: 13rem;

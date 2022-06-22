@@ -1,20 +1,26 @@
-import React, { Fragment, useState } from "react";
-import { useRouter } from "next/router";
+import React, { Fragment, useEffect, useState } from "react";
+import {useRouter} from "next/router";
 import { useForm } from "../../hooks/use-form-hook";
 import Input from "../form-elements/input";
 import MultipleImageUpload from "../form-elements/multiple-image-upload";
 import Button from "../ui-elements/button";
-import QuillNoSSRWrapper from "../editor/quill-wrapper";
+import Editor from "../editor/Editor";
+import { MethodEnum, useHttpClient } from "../../hooks/http-hook";
 import {
   VALIDATOR_MINLENGTH,
   VALIDATOR_MAXLENGTH,
 } from "../../validators/validators";
+import { useAuth } from "../../context/auth-context";
 
 const AktualitaNew: React.FC = () => {
-  const router = useRouter()
-  const [editorValue, setEditorValue] = useState<string>('hello from quill');
+  const router = useRouter();
+  const [editorLoaded, setEditorLoaded] = useState<boolean>(false);
+  const [editorData, setEditorData] = useState<string>("");
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [imageIsValid, setImageIsValid] = useState<boolean>(false);
+  const { token } = useAuth();
+  const { isLoading, error, clearError, sendRequest } = useHttpClient();
+
   const [formState, inputHandler] = useForm(
     {
       title: {
@@ -29,40 +35,44 @@ const AktualitaNew: React.FC = () => {
     false
   );
 
-  console.log(editorValue)
+  useEffect(() => {
+    setEditorLoaded(true);
+  }, []);
+
+  console.log(editorData);
 
   const submitNewNewsHandler = async (
     event: React.FormEvent<HTMLFormElement>
   ) => {
     event.preventDefault();
-    // try {
-    //   const formData = new FormData();
-    //   formData.append("title", formState.inputs.title.value);
-    //   formData.append("subtitle", formState.inputs.subtitle.value);
-    //   formData.append("message", editorValue);
-    //   formData.append("image", selectedFiles[0]);
-    //   await sendRequest(
-    //     process.env.REACT_APP_BACKEND_URL + "/news",
-    //     "POST",
-    //     formData,
-    //     {
-    //       Authorization: "Bearer " + auth.token,
-    //     }
-    //   );
+    try {
+      const formData = new FormData();
+      formData.append("title", formState.inputs.title.value);
+      formData.append("subtitle", formState.inputs.subtitle.value);
+      formData.append("message", editorData);
+      formData.append("image", selectedFiles[0]);
+      console.log(formData);
+      //   await sendRequest(
+      //     process.env.REACT_APP_BACKEND_URL + "/news",
+      //     MethodEnum.POST,
+      //     formData,
+      //     {
+      //       Authorization: "Bearer " + token,
+      //     }
+      //   );
 
-    //   router.push("/aktuality");
-    // } catch (err) {
-    //   console.log(err);
-    // }
+      router.push("/aktuality");
+    } catch (err) {
+      console.log(err);
+    }
   };
-  
 
   return (
     <Fragment>
       <div className="aktualita-new__container">
         <h2 className="heading-secondary">Přidej aktualitu</h2>
         <hr />
-        <form className="" onSubmit={submitNewNewsHandler}>
+        <form onSubmit={submitNewNewsHandler}>
           <Input
             id="title"
             element="input"
@@ -81,7 +91,14 @@ const AktualitaNew: React.FC = () => {
             errorText="Podtitulek musí mít minimálně 10 a maximálně 75 znaků."
             onInput={inputHandler}
           />
-          <QuillNoSSRWrapper theme="snow" value={editorValue} onChange={setEditorValue} />
+          <Editor
+            value="hello"
+            name="zpráva"
+            onChange={(data) => {
+              setEditorData(data);
+            }}
+            editorLoaded={editorLoaded}
+          />
 
           <MultipleImageUpload
             inputId="image"

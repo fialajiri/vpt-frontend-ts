@@ -30,7 +30,7 @@ const NavigationLinks: React.FC = () => {
         </a>
       </li>
       <li className="nav__list__item">
-        <a href="https://instagram.com/volbaproteplice?igshid=YmMyMTA2M2Y=" target="_blank">
+        <a href="https://instagram.com/volbaproteplice?igshid=YmMyMTA2M2Y=" target="_blank" >
           <InstagramLogo className="nav__list__icon" weight="bold"/>
         </a>
       </li>

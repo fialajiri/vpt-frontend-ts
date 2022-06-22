@@ -1,6 +1,6 @@
 import { useCallback, useRef, useState, useEffect } from "react";
 
-enum MethodEnum {
+export enum MethodEnum {
   GET = "GET",
   POST = "POST",
   PUT = "PUT",
@@ -25,7 +25,7 @@ export const useHttpClient = () => {
     async (
       url: string,
       method: MethodEnum = MethodEnum.GET,
-      body = null,
+      body: any = null,
       headers = {}
     ) => {
       setIsLoading(true);
