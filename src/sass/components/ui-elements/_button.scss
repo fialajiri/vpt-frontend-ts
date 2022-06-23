@@ -6,9 +6,9 @@
   font-weight: 400;
   letter-spacing: .5px;
   text-transform: uppercase;  
-  background-color: $color-primary;
+  background-color: $color-primary-dark2;
   color: $color-white;
-  padding: 1.4rem;
+  padding: 1.6rem 2rem;
   border: 2px solid transparent;
   border-radius: $border-radius;
   cursor: pointer;
@@ -22,18 +22,20 @@
   
 
   &:hover{
-      background-color: $color-primary-dark2;
+      background-color: $color-secondary-dark3;
   }
 
   &--inverse {
     background: transparent;    
-    border:1px solid $color-primary;
-    color: $color-primary-dark1;
+    border:2px solid $color-primary-dark2;
+    color: $color-primary-dark2;
+    font-weight: 500;
     
 
     &:hover{
         background-color: transparent;
-        border: 1px solid $color-primary-dark1;
+        border: 2px solid $color-secondary-dark3;
+        color: $color-secondary-dark3;
     }
 
   }
@@ -56,9 +58,9 @@
   }
 
   &--small {
-    padding: 1rem 2rem;
+    padding: 1.2rem 2rem;
     font-size: 1.2rem;
-    font-weight: 400;
+    
   }
 
   &--big {

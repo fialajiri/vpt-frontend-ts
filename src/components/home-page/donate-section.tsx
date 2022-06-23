@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Button from "../ui-elements/button";
 
 const DonateSection: React.FC = () => {
   return (

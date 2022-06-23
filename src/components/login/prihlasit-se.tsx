@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Input from "../form-elements/input";
 import {
   VALIDATOR_EMAIL,
@@ -8,11 +8,12 @@ import { useRouter } from "next/router";
 import { useAuth } from "../../context/auth-context";
 import { MethodEnum, useHttpClient } from "../../hooks/http-hook";
 import { useForm } from "../../hooks/use-form-hook";
+
 import Button from "../ui-elements/button";
 
 const PrihlasitSe: React.FC = () => {
   const router = useRouter();
-  const { login } = useAuth();
+  const { login, isAuthenticated } = useAuth();
   const { isLoading, error, clearError, sendRequest } = useHttpClient();
   const [formState, inputHandler] = useForm(
     {
@@ -27,6 +28,10 @@ const PrihlasitSe: React.FC = () => {
     },
     false
   );
+
+  useEffect(() => {
+    if(isAuthenticated) router.replace('/aktuality')
+  },[isAuthenticated])
 
   const LoginFormHandler = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();

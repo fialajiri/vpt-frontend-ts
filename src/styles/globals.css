@@ -1029,6 +1029,8 @@ button {
         .aktuality__list-item {
           padding: 4rem;
           max-width: 60rem; } }
+  .aktuality__button--container {
+    margin: 3rem auto; }
 
 .aktualita-new__container {
   max-width: 75rem;
@@ -1046,9 +1048,9 @@ button {
   font-weight: 400;
   letter-spacing: .5px;
   text-transform: uppercase;
-  background-color: #1971c2;
+  background-color: #0d3961;
   color: #fff;
-  padding: 1.4rem;
+  padding: 1.6rem 2rem;
   border: 2px solid transparent;
   border-radius: 2rem;
   cursor: pointer;
@@ -1059,23 +1061,24 @@ button {
   justify-content: center;
   align-items: center; }
   .button:hover {
-    background-color: #0d3961; }
+    background-color: #966a03; }
   .button--inverse {
     background: transparent;
-    border: 1px solid #1971c2;
-    color: #145a9b; }
+    border: 2px solid #0d3961;
+    color: #0d3961;
+    font-weight: 500; }
     .button--inverse:hover {
       background-color: transparent;
-      border: 1px solid #145a9b; }
+      border: 2px solid #966a03;
+      color: #966a03; }
   .button:disabled, .button:hover:disabled, .button:active:disabled {
     background: #868e96;
     color: #fff;
     border-color: #868e96;
     cursor: not-allowed; }
   .button--small {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    font-weight: 400; }
+    padding: 1.2rem 2rem;
+    font-size: 1.2rem; }
   .button--big {
     padding: 1.5rem 4rem;
     font-size: 2rem;
