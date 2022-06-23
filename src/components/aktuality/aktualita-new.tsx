@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 import { useForm } from "../../hooks/use-form-hook";
 import Input from "../form-elements/input";
 import MultipleImageUpload from "../form-elements/multiple-image-upload";
@@ -11,6 +11,8 @@ import {
   VALIDATOR_MAXLENGTH,
 } from "../../validators/validators";
 import { useAuth } from "../../context/auth-context";
+import ErrorModal from "../ui-elements/error-modal";
+import LoadingSpinner from "../ui-elements/loading-spinner";
 
 const AktualitaNew: React.FC = () => {
   const router = useRouter();
@@ -52,14 +54,14 @@ const AktualitaNew: React.FC = () => {
       formData.append("message", editorData);
       formData.append("image", selectedFiles[0]);
       console.log(formData);
-      //   await sendRequest(
-      //     process.env.REACT_APP_BACKEND_URL + "/news",
-      //     MethodEnum.POST,
-      //     formData,
-      //     {
-      //       Authorization: "Bearer " + token,
-      //     }
-      //   );
+      await sendRequest(
+        process.env.REACT_APP_BACKEND_URL + "/new",
+        MethodEnum.POST,
+        formData,
+        {
+          Authorization: "Bearer " + token,
+        }
+      );
 
       router.push("/aktuality");
     } catch (err) {
@@ -69,8 +71,10 @@ const AktualitaNew: React.FC = () => {
 
   return (
     <Fragment>
+      <ErrorModal error={error} onClear={clearError} modalProps={{header: error}} />
       <div className="aktualita-new__container">
-        <h2 className="heading-secondary">Přidej aktualitu</h2>
+      
+        <h2 className="heading-secondary">Přidat aktualitu</h2>
         <hr />
         <form onSubmit={submitNewNewsHandler}>
           <Input
@@ -92,7 +96,7 @@ const AktualitaNew: React.FC = () => {
             onInput={inputHandler}
           />
           <Editor
-            value="hello"
+            value=""
             name="zpráva"
             onChange={(data) => {
               setEditorData(data);

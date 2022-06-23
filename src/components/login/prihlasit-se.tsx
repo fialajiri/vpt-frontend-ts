@@ -56,7 +56,7 @@ const PrihlasitSe: React.FC = () => {
   return (
     <Fragment>
       <div className="prihlasit-se__container">
-        <h2>Přihlašte se, prosím</h2>
+        <h2 className="heading-secondary">Přihlašte se</h2>
         <hr />
         <form onSubmit={LoginFormHandler}>
           <Input

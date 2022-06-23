@@ -9,7 +9,7 @@ export interface IModalOverlayProps {
   headerClass?: string;
   contentClass?: string;
   footerClass?: string;
-  header?: string;
+  header?: string | null;
   footer?: string | JSX.Element;
   onSubmit?: () => {};
   children?: React.ReactNode;

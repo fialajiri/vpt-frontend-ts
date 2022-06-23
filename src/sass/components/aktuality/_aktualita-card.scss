@@ -46,6 +46,11 @@
     & ol {
       margin-left: 2rem;
     }
+
+    & a {
+      color: $color-primary-dark1;
+      font-weight: 500;
+    }
   }
 
   &__image {

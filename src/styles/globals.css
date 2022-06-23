@@ -115,6 +115,35 @@ button {
     transform-origin: 0% 0%;
     transform: translate3d(0px, 0px, 0px) scale(1, 1); } }
 
+@keyframes shakeItBaby {
+  0% {
+    transform: rotateZ(1deg); }
+  3% {
+    transform: rotateZ(-1deg); }
+  6% {
+    transform: rotateZ(1deg); }
+  9% {
+    transform: rotateZ(-1deg); }
+  12% {
+    transform: rotateZ(1deg); }
+  15% {
+    transform: rotateZ(0deg); } }
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(0, -1px, 0); }
+  20%,
+  80% {
+    transform: translate3d(0, 2px, 0); }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(0, -4px, 0); }
+  40%,
+  60% {
+    transform: translate3d(0, 4px, 0); } }
+
 .home-page__container {
   max-width: 140rem;
   margin: 0 auto; }
@@ -477,6 +506,61 @@ button {
       @media only screen and (max-width: 22.5em) {
         .future-election__grid__item--icon {
           font-size: 2.6rem; } }
+
+.donate-section__container {
+  margin: 8rem auto; }
+
+.donate-section__button {
+  line-height: 1.2 !important;
+  text-decoration: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #0d3961;
+  color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  min-width: 15rem;
+  max-width: 40rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition: all 500ms !important;
+  animation-name: shakeItBaby;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  perspective: 100rem; }
+  @media only screen and (max-width: 37.5em) {
+    .donate-section__button {
+      padding: 2rem;
+      min-width: 10rem; } }
+  @media only screen and (max-width: 22.5em) {
+    .donate-section__button {
+      padding: 2rem;
+      min-width: 0;
+      font-size: 1.4rem;
+      margin: 0 2rem; } }
+  .donate-section__button:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #966a03;
+    z-index: -1;
+    transition: width 500ms ease-in-out;
+    border-radius: 2rem; }
+  .donate-section__button:hover:after {
+    width: 100%; }
 
 .zastupitele-list__container {
   margin: 0 auto;
@@ -885,6 +969,9 @@ button {
     list-style: none; }
   .aktualita-card__message ol {
     margin-left: 2rem; }
+  .aktualita-card__message a {
+    color: #145a9b;
+    font-weight: 500; }
 
 .aktualita-card__image {
   display: flex;
@@ -1048,6 +1135,53 @@ button {
   100% {
     transform: scale(0.8); } }
 
+.modal {
+  z-index: 100;
+  position: fixed;
+  top: 22vh;
+  left: 10%;
+  width: 80%;
+  background: #f1f1f1;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+  border-radius: 2rem; }
+  .modal__header {
+    width: 100%;
+    padding: 1rem;
+    background-color: #1971c2;
+    color: #fff;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem; }
+    .modal__header h2 {
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0.5rem;
+      color: #222; }
+  .modal__content {
+    padding: 1rem 0.5rem; }
+  .modal__footer {
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  .modal-enter {
+    transform: translateY(-10rem);
+    opacity: 0; }
+  .modal-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 200ms; }
+  .modal-exit {
+    transform: translateY(0);
+    opacity: 1; }
+  .modal-exit-active {
+    transform: translateY(-10rem);
+    opacity: 0;
+    transition: all 200ms; }
+
+.error-modal__paragraph {
+  font-size: 1.6rem;
+  text-align: center; }
+
 .form-control {
   margin: .75rem 0; }
   .form-control label,
@@ -1150,6 +1284,10 @@ button {
   font-size: 1.5rem !important;
   font-family: inherit;
   line-height: 1.6; }
+
+.prihlasit-se__container {
+  margin: 10rem auto;
+  max-width: 40rem; }
 
 .navigation {
   height: 13rem;

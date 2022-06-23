@@ -4,15 +4,15 @@
   top: 22vh;
   left: 10%;
   width: 80%;
-  background: $color-soft;
+  background: $color-background;
   box-shadow: $shadow-dark;
   border-radius: $border-radius;
 
   &__header {
     width: 100%;
     padding: 1rem;
-    background-color: $color-soft;
-    color: $color-decor;
+    background-color: $color-primary;
+    color: $color-white;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
     
@@ -21,7 +21,7 @@
       text-transform: uppercase;
       text-align: center;      
       margin: 0.5rem;
-      color: $color-dark;
+      color: $color-grey6;
     }
   }
 
@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
   }
 
   &-enter {

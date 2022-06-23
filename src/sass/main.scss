@@ -17,6 +17,7 @@
 @import 'components/home-page/program-section';
 @import 'components/home-page/past-election-section';
 @import 'components/home-page/future-election-section';
+@import 'components/home-page/donate-section';
 
 @import 'components/zastupitele/zastupitele-list';
 @import 'components/zastupitele/zastupitel-card';
@@ -32,12 +33,15 @@
 @import 'components/ui-elements/button';
 @import 'components/ui-elements/backdrop';
 @import 'components/ui-elements/loading-spinner';
-
+@import 'components/ui-elements/modal';
+@import 'components/ui-elements/error_modal';
 
 @import 'components/form-elemetns/input';
 @import 'components/form-elemetns/multiple-image-upload';
 
 @import 'components/editor/editor';
+
+@import 'components/auth/prihlasit-se';
 
 @import 'layout/header/header';
 @import 'layout/navigation/main-navigation';

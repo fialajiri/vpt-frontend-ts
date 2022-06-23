@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { FacebookLogo, InstagramLogo } from "phosphor-react";
+import { FacebookLogo, InstagramLogo, User } from "phosphor-react";
 
 const NavigationLinks: React.FC = () => {
   const router = useRouter();
 
   const getClass = (pathName: string): string => {
-    if (router.pathname === pathName) return "nav__list__item nav__list__item--active";
+    if (router.pathname === pathName)
+      return "nav__list__item nav__list__item--active";
     return "nav__list__item";
   };
 
@@ -25,14 +26,27 @@ const NavigationLinks: React.FC = () => {
         <Link href="/aktuality">Aktuality</Link>
       </li>
       <li className="nav__list__item">
-        <a href="https://www.facebook.com/search/top?q=volba%20pro%20teplice" target="_blank">
-          <FacebookLogo className="nav__list__icon" weight="bold"/>
+        <a
+          href="https://www.facebook.com/search/top?q=volba%20pro%20teplice"
+          target="_blank"
+        >
+          <FacebookLogo className="nav__list__icon" weight="bold" />
         </a>
       </li>
       <li className="nav__list__item">
-        <a href="https://instagram.com/volbaproteplice?igshid=YmMyMTA2M2Y=" target="_blank" >
-          <InstagramLogo className="nav__list__icon" weight="bold"/>
+        <a
+          href="https://instagram.com/volbaproteplice?igshid=YmMyMTA2M2Y="
+          target="_blank"
+        >
+          <InstagramLogo className="nav__list__icon" weight="bold" />
         </a>
+      </li>
+      <li className="nav__list__item">
+        <Link href="/prihlasit-se">
+          <a>
+            <User className="nav__list__icon" weight="bold" />
+          </a>
+        </Link>
       </li>
     </ul>
   );

@@ -4,7 +4,7 @@ import Button from "./button";
 
 export interface IErrorModalProps {
   onClear: () => void;
-  error: string | undefined;
+  error: string | null |undefined;
   modalProps?: IModalOverlayProps;
 }
 
