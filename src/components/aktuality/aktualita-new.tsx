@@ -55,7 +55,7 @@ const AktualitaNew: React.FC = () => {
       formData.append("image", selectedFiles[0]);
       console.log(formData);
       await sendRequest(
-        process.env.REACT_APP_BACKEND_URL + "/new",
+        process.env.REACT_APP_BACKEND_URL + "/news",
         MethodEnum.POST,
         formData,
         {
