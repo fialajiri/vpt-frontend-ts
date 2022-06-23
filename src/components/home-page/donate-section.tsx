@@ -5,7 +5,7 @@ const DonateSection: React.FC = () => {
     <div className="donate-section__container">
       <Link href="https://dary.zeleni.cz/id/teplice">
         <a target="_blank" className="donate-section__button">
-          Přispějte nám na kampaň
+          Chcete přispět na kampaň?
         </a>
       </Link>
     </div>
