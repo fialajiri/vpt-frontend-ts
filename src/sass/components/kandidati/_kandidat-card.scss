@@ -208,7 +208,8 @@
       }
 
       @include respond(phone-small) {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        
       }
 
       @include respond(big-desktop) {

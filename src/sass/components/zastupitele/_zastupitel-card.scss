@@ -114,17 +114,17 @@
       line-height: 1.6;
       margin-bottom: 1.6rem;
 
-      @include respond(tab-land) {
-        font-size: 1.4rem;
-      }
+      // @include respond(tab-land) {
+      //   font-size: 1.4rem;
+      // }
 
-      @include respond(tab-port){
-        font-size: 1.6rem;
-      }
+      // @include respond(tab-port){
+      //   font-size: 1.6rem;
+      // }
 
-      @include respond(phone){
-        font-size: 1.4rem;
-      }
+      // @include respond(phone){
+      //   font-size: 1.4rem;
+      // }
     }
   }
 }

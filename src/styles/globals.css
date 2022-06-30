@@ -698,15 +698,6 @@ button {
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 1.6rem; }
-    @media only screen and (max-width: 75em) {
-      .zastupitel__card__info--bio {
-        font-size: 1.4rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .zastupitel__card__info--bio {
-        font-size: 1.6rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .zastupitel__card__info--bio {
-        font-size: 1.4rem; } }
 
 .zastupitel-new__container {
   max-width: 75rem;
@@ -878,7 +869,7 @@ button {
           font-size: 1.6rem; } }
       @media only screen and (max-width: 22.5em) {
         .kandidat-card__info-occupation {
-          font-size: 1.4rem; } }
+          font-size: 1.6rem; } }
       @media only screen and (min-width: 112.5em) {
         .kandidat-card__info-occupation {
           font-size: 1.4rem;
