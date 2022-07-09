@@ -1,0 +1,36 @@
+.support-parties {
+  &__container {
+    margin: 0 auto;
+    padding: 3.6rem;
+  }
+
+  &__logo-container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    & img {
+      filter: brightness(0);
+      opacity: 50%;
+      height: 12rem;
+      transition: all 500ms;
+
+      &:hover {
+        filter: brightness(1);
+        opacity: 100%;
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__logo-budoucnost {
+    height: 16rem !important;
+  }
+}

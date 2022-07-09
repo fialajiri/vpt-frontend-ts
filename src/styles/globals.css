@@ -562,6 +562,34 @@ button {
   .donate-section__button:hover:after {
     width: 100%; }
 
+.support-parties__container {
+  margin: 0 auto;
+  padding: 3.6rem; }
+
+.support-parties__logo-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  @media only screen and (max-width: 37.5em) {
+    .support-parties__logo-container {
+      flex-direction: column;
+      gap: 5rem; } }
+  .support-parties__logo-container img {
+    filter: brightness(0);
+    opacity: 50%;
+    height: 12rem;
+    transition: all 500ms; }
+    .support-parties__logo-container img:hover {
+      filter: brightness(1);
+      opacity: 100%;
+      transform: scale(1.2); }
+
+.support-parties__logo-budoucnost {
+  height: 16rem !important; }
+
 .zastupitele-list__container {
   margin: 0 auto;
   max-width: 140rem;
