@@ -590,6 +590,9 @@ button {
 .support-parties__logo-budoucnost {
   height: 16rem !important; }
 
+.support-parties__logo-senator {
+  height: 12rem !important; }
+
 .zastupitele-list__container {
   margin: 0 auto;
   max-width: 140rem;

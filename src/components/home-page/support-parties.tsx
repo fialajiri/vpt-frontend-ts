@@ -8,6 +8,11 @@ const SupportParties: React.FC = () => {
           src="logos/budoucnost-logo.svg"
           alt="logo strany budoucnost"
         />
+         <img
+          className="support-parties__logo-senator"
+          src="logos/senator_2.png"
+          alt="logo strany senator"
+        />
         <img
           className="support-parties__logo-hnhrm"
           src="logos/hnhrm.png"
