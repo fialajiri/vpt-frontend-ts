@@ -41,7 +41,7 @@ const ModalOverlay: React.FC<IModalOverlayProps> = (props) => {
 export interface IModalProps {
   show: boolean;
   onCancel: () => void;
-  modalProps: IModalOverlayProps
+  modalProps?: IModalOverlayProps
 }
 
 const Modal: React.FC<IModalProps> = (props) => {

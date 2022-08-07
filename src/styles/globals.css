@@ -976,6 +976,12 @@ button {
   color: #966a03;
   text-transform: uppercase; }
 
+.aktualita-card__buttons {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
 .aktualita-card__message {
   font-size: 1.8rem;
   font-weight: 400;
@@ -1122,10 +1128,11 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(150, 106, 3, 0.4);
+  background: rgba(150, 106, 3, 0.1);
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 1000; }
 
 .loading-spinner__dual-ring {
   display: inline-block;

@@ -23,6 +23,14 @@
     text-transform: uppercase;
   }
 
+  &__buttons {
+    margin-top: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   &__message {
     font-size: 1.8rem;
     font-weight: 400;

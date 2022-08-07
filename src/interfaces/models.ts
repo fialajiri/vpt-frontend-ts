@@ -1,3 +1,5 @@
+import {ParsedUrlQuery} from 'querystring'
+
 interface ImageObject {
   imageUrl: string;
   imageKey: string;
@@ -27,4 +29,8 @@ export interface AktualitaDoc {
   subtitle: string;
   message: string;
   image: ImageObject;
+}
+
+export interface IParams extends ParsedUrlQuery {
+  aktualitaId: string
 }

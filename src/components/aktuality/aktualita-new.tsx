@@ -6,18 +6,20 @@ import MultipleImageUpload from "../form-elements/multiple-image-upload";
 import Button from "../ui-elements/button";
 import Editor from "../editor/Editor";
 import { MethodEnum, useHttpClient } from "../../hooks/http-hook";
-import {
-  VALIDATOR_MINLENGTH,
-  VALIDATOR_MAXLENGTH,
-} from "../../validators/validators";
+import { VALIDATOR_MINLENGTH, VALIDATOR_MAXLENGTH } from "../../validators/validators";
 import { useAuth } from "../../context/auth-context";
 import ErrorModal from "../ui-elements/error-modal";
 import LoadingSpinner from "../ui-elements/loading-spinner";
+import { AktualitaDoc } from "../../interfaces/models";
 
-const AktualitaNew: React.FC = () => {
+interface AktualitaNewProps {
+  aktualita?: AktualitaDoc;
+}
+
+const AktualitaNew: React.FC<AktualitaNewProps> = ({ aktualita }) => {
   const router = useRouter();
   const [editorLoaded, setEditorLoaded] = useState<boolean>(false);
-  const [editorData, setEditorData] = useState<string>("");
+  const [editorData, setEditorData] = useState<string>(aktualita?.message || "");
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [imageIsValid, setImageIsValid] = useState<boolean>(false);
   const { token } = useAuth();
@@ -26,12 +28,12 @@ const AktualitaNew: React.FC = () => {
   const [formState, inputHandler] = useForm(
     {
       title: {
-        value: "",
-        isValid: false,
+        value: aktualita?.title || "",
+        isValid: aktualita?.title ? true : false,
       },
       subtitle: {
-        value: "",
-        isValid: false,
+        value: aktualita?.subtitle || "",
+        isValid: aktualita?.subtitle ? true : false,
       },
     },
     false
@@ -41,11 +43,7 @@ const AktualitaNew: React.FC = () => {
     setEditorLoaded(true);
   }, []);
 
-  console.log(editorData);
-
-  const submitNewNewsHandler = async (
-    event: React.FormEvent<HTMLFormElement>
-  ) => {
+  const submitNewNewsHandler = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
       const formData = new FormData();
@@ -53,27 +51,27 @@ const AktualitaNew: React.FC = () => {
       formData.append("subtitle", formState.inputs.subtitle.value);
       formData.append("message", editorData);
       formData.append("image", selectedFiles[0]);
-      console.log(formData);
-      await sendRequest(
-        process.env.REACT_APP_BACKEND_URL + "/news",
-        MethodEnum.POST,
-        formData,
-        {
-          Authorization: "Bearer " + token,
-        }
-      );
+
+      let url = `${process.env.REACT_APP_BACKEND_URL}/news`;
+      let method = MethodEnum.POST;
+
+      if (aktualita) {
+        url = `${process.env.REACT_APP_BACKEND_URL}/news/${aktualita.id}`;
+        method = MethodEnum.PATCH;
+      }
+
+      await sendRequest(url, method, formData, {
+        Authorization: "Bearer " + token,
+      });
 
       router.push("/aktuality");
-    } catch (err) {
-      console.log(err);
-    }
+    } catch (err) {}
   };
 
   return (
     <Fragment>
-      <ErrorModal error={error} onClear={clearError} modalProps={{header: error}} />
+      <ErrorModal error={error} onClear={clearError} modalProps={{ header: error }} />
       <div className="aktualita-new__container">
-      
         <h2 className="heading-secondary">Přidat aktualitu</h2>
         <hr />
         <form onSubmit={submitNewNewsHandler}>
@@ -85,6 +83,8 @@ const AktualitaNew: React.FC = () => {
             validators={[VALIDATOR_MINLENGTH(10), VALIDATOR_MAXLENGTH(75)]}
             errorText="Titulek musí mít minimálně 10 a maximálně 75 znaků."
             onInput={inputHandler}
+            initialValue={aktualita?.title}
+            initialValid={aktualita?.title ? true : false}
           />
           <Input
             id="subtitle"
@@ -94,9 +94,11 @@ const AktualitaNew: React.FC = () => {
             validators={[VALIDATOR_MINLENGTH(10), VALIDATOR_MAXLENGTH(75)]}
             errorText="Podtitulek musí mít minimálně 10 a maximálně 75 znaků."
             onInput={inputHandler}
+            initialValue={aktualita?.subtitle}
+            initialValid={aktualita?.subtitle ? true : false}
           />
           <Editor
-            value=""
+            value={aktualita?.message || ""}
             name="zpráva"
             onChange={(data) => {
               setEditorData(data);
@@ -111,11 +113,9 @@ const AktualitaNew: React.FC = () => {
             isValid={imageIsValid}
             setIsValid={setImageIsValid}
             buttonLabel={"Prosím vyberte obrázek"}
+            initialFilesUrl={aktualita?.image ? [aktualita?.image.imageUrl] : []}
           />
-          <Button
-            className="aktaualita-new__form--button"
-            disabled={!formState.isValid}
-          >
+          <Button className="aktaualita-new__form--button" disabled={!formState.isValid}>
             Uložit
           </Button>
         </form>

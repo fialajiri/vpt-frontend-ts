@@ -1,19 +1,17 @@
 import { Fragment, useEffect } from "react";
 import Input from "../form-elements/input";
-import {
-  VALIDATOR_EMAIL,
-  VALIDATOR_MINLENGTH,
-} from "../../validators/validators";
+import { VALIDATOR_EMAIL, VALIDATOR_MINLENGTH } from "../../validators/validators";
 import { useRouter } from "next/router";
 import { useAuth } from "../../context/auth-context";
 import { MethodEnum, useHttpClient } from "../../hooks/http-hook";
 import { useForm } from "../../hooks/use-form-hook";
 
 import Button from "../ui-elements/button";
+import LoadingSpinner from "../ui-elements/loading-spinner";
 
 const PrihlasitSe: React.FC = () => {
   const router = useRouter();
-  const { login, isAuthenticated } = useAuth();
+  const { login, isAuthenticated, logout } = useAuth();
   const { isLoading, error, clearError, sendRequest } = useHttpClient();
   const [formState, inputHandler] = useForm(
     {
@@ -29,9 +27,9 @@ const PrihlasitSe: React.FC = () => {
     false
   );
 
-  useEffect(() => {
-    if(isAuthenticated) router.replace('/aktuality')
-  },[isAuthenticated])
+  // useEffect(() => {
+  //   if (isAuthenticated) router.replace("/aktuality");
+  // }, [isAuthenticated]);
 
   const LoginFormHandler = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -58,40 +56,47 @@ const PrihlasitSe: React.FC = () => {
     }
   };
 
-  return (
-    <Fragment>
+  if (isAuthenticated === undefined || isAuthenticated === null) {
+    return <LoadingSpinner asOverlay />;
+  } else if (isAuthenticated === true) {
+    return (
       <div className="prihlasit-se__container">
-        <h2 className="heading-secondary">Přihlašte se</h2>
-        <hr />
-        <form onSubmit={LoginFormHandler}>
-          <Input
-            element="input"
-            id="email"
-            type="email"
-            label="Email"
-            validators={[VALIDATOR_EMAIL()]}
-            errorText="Prosím zadejte platný email."
-            onInput={inputHandler}
-          />
-          <Input
-            element="input"
-            id="password"
-            type="password"
-            label="Heslo"
-            validators={[VALIDATOR_MINLENGTH(6)]}
-            errorText="Heslo musí mít mininálně 6 znaků."
-            onInput={inputHandler}
-          />
-          <Button
-            className="prihlasit-se__form--button"
-            disabled={!formState.isValid}
-          >
-            Přihlásit se
-          </Button>
-        </form>
+        <Button onClick={logout}>Odhlásit se</Button>
       </div>
-    </Fragment>
-  );
+    );
+  } else {
+    return (
+      <Fragment>
+        <div className="prihlasit-se__container">
+          <h2 className="heading-secondary">Přihlašte se</h2>
+          <hr />
+          <form onSubmit={LoginFormHandler}>
+            <Input
+              element="input"
+              id="email"
+              type="email"
+              label="Email"
+              validators={[VALIDATOR_EMAIL()]}
+              errorText="Prosím zadejte platný email."
+              onInput={inputHandler}
+            />
+            <Input
+              element="input"
+              id="password"
+              type="password"
+              label="Heslo"
+              validators={[VALIDATOR_MINLENGTH(6)]}
+              errorText="Heslo musí mít mininálně 6 znaků."
+              onInput={inputHandler}
+            />
+            <Button className="prihlasit-se__form--button" disabled={!formState.isValid}>
+              Přihlásit se
+            </Button>
+          </form>
+        </div>
+      </Fragment>
+    );
+  }
 };
 
 export default PrihlasitSe;
