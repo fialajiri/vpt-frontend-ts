@@ -1398,6 +1398,10 @@ button {
   gap: 3.2rem;
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 75em) {
+    .nav__list {
+      gap: 2.2rem;
+      font-size: 2rem; } }
   .nav__list__icon {
     display: flex;
     align-items: center;

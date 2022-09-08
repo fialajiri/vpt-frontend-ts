@@ -25,6 +25,9 @@ const NavigationLinks: React.FC = () => {
       <li className={getClass("/aktuality")}>
         <Link href="/aktuality">Aktuality</Link>
       </li>
+      <li className={getClass("/program")}>
+        <Link href="/program/program.pdf">Program</Link>
+      </li>
       <li className="nav__list__item">
         <a
           href="https://www.facebook.com/search/top?q=volba%20pro%20teplice"
