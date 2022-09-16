@@ -19,6 +19,8 @@ export interface KandidatDoc {
   name: string;
   image: string;
   occupation: string;
+  motto:string;
+  text:string;
   order: number;
 }
 

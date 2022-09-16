@@ -836,7 +836,7 @@ button {
           width: 100%; } }
       @media only screen and (min-width: 112.5em) {
         .kandidat-card__image-container--back {
-          height: 30rem; } }
+          height: 35rem; } }
   .kandidat-card__image-box {
     display: flex;
     position: relative;
@@ -846,7 +846,7 @@ button {
     overflow: hidden; }
     @media only screen and (min-width: 112.5em) {
       .kandidat-card__image-box {
-        height: 30rem; } }
+        height: 35rem; } }
     .kandidat-card__image-box--small {
       display: flex;
       position: relative;
@@ -859,14 +859,17 @@ button {
           height: 50rem; } }
       @media only screen and (min-width: 112.5em) {
         .kandidat-card__image-box--small {
-          height: 30rem; } }
+          height: 35rem; } }
   .kandidat-card__info {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
     color: #0d3961;
     padding: 1rem;
     text-align: left; }
+    @media only screen and (max-width: 75em) {
+      .kandidat-card__info {
+        gap: .5rem; } }
     @media only screen and (max-width: 56.25em) {
       .kandidat-card__info {
         align-items: center;
@@ -876,7 +879,7 @@ button {
       font-weight: 600; }
       @media only screen and (max-width: 75em) {
         .kandidat-card__info-name {
-          font-size: 2rem;
+          font-size: 1.8rem;
           font-weight: 500; } }
       @media only screen and (max-width: 56.25em) {
         .kandidat-card__info-name {
@@ -887,11 +890,11 @@ button {
           font-size: 1.8rem;
           font-weight: 500; } }
     .kandidat-card__info-occupation {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: 500; }
       @media only screen and (max-width: 75em) {
         .kandidat-card__info-occupation {
-          font-size: 1.6rem; } }
+          font-size: 1.4rem; } }
       @media only screen and (max-width: 56.25em) {
         .kandidat-card__info-occupation {
           font-size: 1.8rem; } }
@@ -904,6 +907,28 @@ button {
       @media only screen and (min-width: 112.5em) {
         .kandidat-card__info-occupation {
           font-size: 1.4rem;
+          font-weight: 400; } }
+    .kandidat-card__info-motto {
+      font-size: 1.6rem;
+      font-style: italic; }
+      @media only screen and (max-width: 75em) {
+        .kandidat-card__info-motto {
+          font-size: 1.4rem; } }
+    .kandidat-card__info-text {
+      font-size: 1.2rem;
+      font-weight: 400; }
+      @media only screen and (max-width: 75em) {
+        .kandidat-card__info-text {
+          font-size: 1rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .kandidat-card__info-text {
+          font-size: 1.4rem; } }
+      @media only screen and (max-width: 22.5em) {
+        .kandidat-card__info-text {
+          font-size: 1.2rem; } }
+      @media only screen and (min-width: 112.5em) {
+        .kandidat-card__info-text {
+          font-size: 1rem;
           font-weight: 400; } }
 
 .kandidati-list {
@@ -952,7 +977,8 @@ button {
         row-gap: 10rem; } }
     @media only screen and (min-width: 112.5em) {
       .kandidati-list ul {
-        grid-template-columns: repeat(3, 1fr); } }
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20rem; } }
   .kandidati-list li {
     list-style: none; }
 

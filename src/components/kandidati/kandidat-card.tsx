@@ -41,6 +41,8 @@ const KandidatCard: React.FC<KandidatCardProps> = ({ kandidat }) => {
           <p className="kandidat-card__info-occupation">
             {kandidat.occupation}
           </p>
+          <p className="kandidat-card__info-motto">{kandidat.motto}</p>
+          <p className="kandidat-card__info-text">{kandidat.text}</p>
         </div>
       </div>
     </div>
