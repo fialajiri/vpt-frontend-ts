@@ -397,6 +397,10 @@ button {
       height: 6.4rem;
       width: 6.4rem;
       align-self: center; }
+    .program__priorities__item--link {
+      text-decoration: underline;
+      font-weight: 500;
+      color: #0d3961; }
     .program__priorities__item--title {
       font-size: 2rem;
       color: #333;
