@@ -4,7 +4,7 @@ import Accomplishement from "./accomplishement-section";
 import Program from "./program-section";
 import PastElection from "./past-election-section";
 import FutureElection from "./future-election-section";
-import DonateSection from "./donate-section";
+// import DonateSection from "./donate-section";
 import SupportParties from "./support-parties";
 
 const HomePage: React.FC = () => {
@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
       <Program />
       <PastElection />
       <FutureElection />
-      <DonateSection />
+      {/* <DonateSection /> */}
     </div>
   );
 };
