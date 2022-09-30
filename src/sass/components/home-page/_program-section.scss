@@ -28,7 +28,6 @@
       row-gap: 6rem;
     }
 
-
     &__item {
       transition: all 500ms;
       padding: 1rem;
@@ -52,6 +51,12 @@
         height: 6.4rem;
         width: 6.4rem;
         align-self: center;
+      }
+
+      &--link {
+        text-decoration: underline;
+        font-weight: 500;
+        color: $color-primary-dark2;
       }
 
       &--title {
