@@ -644,7 +644,7 @@ button {
         align-self: center; } }
 
 .zastupitel__card__image {
-  width: 40%;
+  width: 35%;
   height: 100%;
   flex-shrink: 0;
   transform: scale(1);
