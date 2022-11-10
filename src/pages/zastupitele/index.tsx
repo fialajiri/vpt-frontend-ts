@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { ZastupitelDoc } from "../../interfaces/models";
 import ZastupiteleList from "../../components/zastupitele/zastupitele-list";
 import ZastupiteleHead from "../../components/meta/members-head";
+import zastupiteleData from '../../../public/data/zastupitele.json'
 import { getAllMembers } from "../../utilities/api-utils";
 
 interface ZastupiteleProps {
@@ -24,7 +25,7 @@ const Zastupitele: NextPage<ZastupiteleProps> = ({ zastupitele }) => {
 };
 
 export const getStaticProps = async () => {
-  const zastupitele: ZastupitelDoc[] = await getAllMembers();
+  const zastupitele: ZastupitelDoc[] = zastupiteleData;
 
   return {
     props: {

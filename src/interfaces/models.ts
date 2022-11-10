@@ -8,7 +8,7 @@ interface ImageObject {
 export interface ZastupitelDoc {
   id: string;
   name: string;
-  image: ImageObject;
+  image: string;
   bio: string;
   email: string;
   occupation: string;

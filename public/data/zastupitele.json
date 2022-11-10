@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Ing. Jakub Mráček",
+    "occupation": "středoškolský učitel, předseda kontrolního výboru",
+    "email": "jakub.mracek@teplice.cz",
+    "image": "/images/kandidati/mracek_square.jpg",
+    "bio": "Jsem učitelem chemie a zástupcem ředitele na Gymnáziu Teplice. Více než deset let jsem vedl Dvojku Teplice, největší skautské středisko v okrese. Tvořil jsem audiostezku naším městem, psal Teplická NEJ..., opravoval beuronskou kapli, provozoval Rekola, připravil výstavu k výročí Julia Payera. Od roku 2014 jsem lídrem Volby PRO! Teplice, od roku 2017 také členem KDU-ČSL. Je mi 36 let, jsem ženatý, mám syna a tři dcery."
+  },
+  {
+    "id": "2",
+    "name": "RNDr. Zdeněk Bergman",
+    "occupation": "ředitel gymnázia, člen finančního výboru",
+    "email": "zdenek.bergman@teplice.cz",
+    "image": "/images/kandidati/bergman_square.jpg",
+    "bio": "Dvacet sedm let vedu Gymnázium Teplice. V roce 2014 jste mě jako nezávislého poprvé vyslali za Volbu PRO! Teplice do zastupitelstva města. Pracuji tam ve výboru, předkládám návrhy týkající se zejména rozvoje města, územního plánování nebo oživení veřejného prostoru. Jsem aktivní v několika spolcích, působil jsem ve vědecké radě pedagogické fakulty ústecké univerzity. Narodil jsem se v Teplicích, kde také žiji. Jsem podruhé ženatý, mám jednu dceru."
+  },
+  {
+    "id": "5",
+    "name": "Mgr. Nikola Fialová Seifrtová",
+    "occupation": "pořadatelka kulturních a sportovních akcí, členka výboru pro dopravu, dotace a SMART CITY",
+    "email": "nikola.fialova@teplice.cz",
+    "image": "/images/kandidati/nikolka_square.jpg",
+    "bio": "Po studijích, cestování a pracovních zkušenostech v Praze i zahraničí jsem se vrátila do svého rodného města Teplice. Založila spolek SAYFY z.s., který vznikl primárně k organizaci cyklistického závodu Sayfyho Memorial. Na počest svého zesnulého bratra uspořádala již 12 ročníků závodu pro sváteční i profesionální cyklisty. Tento spolek časem rozšířil svou činnost na organizaci úklidů přírody, cyklistických výletů a sousedkou slavnost Živé Teplice. Slavnost podporuje komunitní život ve městě a snaží se propojovat lidi různých věkových, názorových i národnostních skupin. Jednoduše spojuje všechny, kteří si chtějí zpříjemnit život ve městě. Postupem času se z malého sousedského setkání vyvinul městský festival, který nabízí divadelní a hudební vystoupení, trh lokálních a autorských výrobků, prezentaci místních neziskových aktivit, výstavy umělců, food market menšin žijících v Teplicích i workshopy všeho druhu. Organizuji také promítání dokumentárních filmů na neobvyklých místech z programu KineDok, příležitostně uspořádám výstavu či setkání veřejnosti k aktuálním politickým tématům. Jsem vdaná a jsem matkou dvou dětí."
+  },
+  {
+    "id": "3",
+    "name": "Adam Souček",
+    "occupation": "koordinátor zdravotnických projektů, předseda výboru pro dopravu, dotace a SMART CITY",
+    "email": "adam.soucek@teplice.cz",
+    "image": "/images/kandidati/soucek_square.jpg",
+    "bio": "V rámci politiky se věnuji dopravní oblasti. Podílel jsem se na vytvoření Plánu udržitelné mobility Teplic, který nyní pomáhá vedení města při rozhodování v dopravních záležitostech, tak aby se Tepličákům dobře pohybovalo po městě a to pěšky, na kole, autem i prostřednictvím MHD. Byl jsem členem pracovní skupiny města pro stavbu zimního stadionu. Jsem také místopředsedou spolku podporujícího lokální trati, aktivně se snažíme obnovit Kozí dráhu. Již patnáct jsem členem Strany zelených, t.č. krajským předsedou v Ústeckém kraji. Je mi 45 let, jsem ženatý a mám dva syny."
+  },
+  {
+    "id": "4",
+    "name": "Ing. Jiří Wagner",
+    "occupation": "ekonom, člen finančního výboru",
+    "email": "jiri.wagner@teplice.cz",
+    "image": "/images/kandidati/wagner_square.jpg",
+    "bio": "V rámci své profesní dráhy jsem získal zkušenosti s financemi osobními i firemními. Dohled nad odpovědným hospodařením je mi proto velmi blízký i v případě hospodaření našeho města.Účast při tvorbě prvního teplického komunitního plánu mi přiblížila fungování sociálních a jim blízkých služeb v našem regionu. Rozvoj těchto služeb považuji do budoucna za velkou výzvu. Teplice jsou pro mě domovem, kam se vždy rád vracím. Lepší stav města a jeho okolí mi leží na srdci a rád se k němu snažím přispívat."
+  }
+]

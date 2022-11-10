@@ -11,9 +11,9 @@ const ZastupitelCard: React.FC<ZastupitelProps> = ({ zastupitel, side }) => {
   const zastupitelImage = (
     <div className="zastupitel__card__image">
       <Image
-        width={864}
-        height={864}
-        src={zastupitel.image.imageUrl}
+        width={1000}
+        height={1000}
+        src={zastupitel.image}
         alt={zastupitel.name}
       />
     </div>
