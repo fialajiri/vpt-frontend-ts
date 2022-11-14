@@ -5,7 +5,7 @@
 ### Obecné informace
 Tento projekt tvoří frontend webové stránce politické strany Volba pro Teplice. Mezi hlavní vlastnost patří:
 
-  - Úvodní landing page  - 
+  - Úvodní landing page
   - Možnost přidávat, editovat a mazat zastupile  
   - Přidávání a editace aktualit      
     
