@@ -1,4 +1,4 @@
-# [Volba pro Teplice - client](https://volba-pro-teplice-frontend.vercel.app/)
+# [Volba pro Teplice - client](https://www.volbaproteplice.cz/)
 
 ## Obecné informace
 Tento projekt tvoří frontend webové stránce politické strany Volba pro Teplice. Mezi hlavní vlastnost patří:
