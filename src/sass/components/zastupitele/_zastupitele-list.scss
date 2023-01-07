@@ -40,6 +40,9 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    gap: 20rem;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
 
     & li:nth-child(odd) {
       align-self: flex-end;
